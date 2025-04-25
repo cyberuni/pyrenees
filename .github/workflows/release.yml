@@ -16,6 +16,8 @@ jobs:
     secrets: inherit
 
   docgen:
+    permissions:
+      contents: write
     uses: cyberuni/.github/.github/workflows/pnpm-docs.yml@main
     needs: release
     with:
