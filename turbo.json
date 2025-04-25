@@ -3,12 +3,12 @@
 	"tasks": {
 		"build": {
 			"dependsOn": ["^build"],
-			"inputs": ["*.ts", "package.json", "tsconfig*json"],
+			"inputs": ["*.ts", "*.tsx", "*.css", "package.json", "tsconfig*json"],
 			"outputs": ["cjs", "esm", "tokens.css", "*.tsbuildinfo"]
 		},
 		"build:doc": {
 			"dependsOn": ["^build"],
-			"inputs": ["*.ts", "package.json", "tsconfig*json"],
+			"inputs": ["*.ts", "*.tsx", "*.css", "*.md", "*.mdx", "package.json", "tsconfig*json"],
 			"outputs": ["docs", "storybook-static"]
 		},
 		"clean": {

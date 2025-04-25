@@ -12,5 +12,5 @@ export type BadgeProps = PropsWithChildren<{
  * Renders a styled badge component.
  */
 export function Badge({ className, ...props }: BadgeProps) {
-	return <span {...props} className={twJoin('pds:rounded-sm pds:px-1', className)} />
+	return <span {...props} className={twJoin('pds:rounded-sm pds:px-1 pds:text-primary', className)} />
 }
