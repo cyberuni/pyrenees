@@ -1,6 +1,8 @@
 packages:
-  - facades/*
+  - apps/*
+  - libraries/*
   - packages/*
+  - react/*
   - tools/*
 
 onlyBuiltDependencies:

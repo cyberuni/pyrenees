@@ -14,6 +14,13 @@
 			"*/*/vitest.config.*.timestamp*"
 		]
 	},
+	"linter": {
+		"rules": {
+			"a11y": {
+				"noSvgWithoutTitle": "off"
+			}
+		}
+	},
 	"overrides": [
 		{
 			// Disable rules that are not applicable to storybook files

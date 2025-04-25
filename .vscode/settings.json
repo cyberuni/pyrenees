@@ -25,10 +25,13 @@
     "editor.formatOnSave": true
   },
   "cSpell.words": [
+    "biomejs",
     "depcheckrc",
+    "esbuild",
     "formatjs",
     "jscoverage",
     "pinst",
+    "pkgs",
     "pnpm",
     "repobuddy",
     "Snyk",

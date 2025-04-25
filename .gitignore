@@ -73,3 +73,5 @@ esm
 tslib
 vite.config.*.timestamp*
 vitest.config.*.timestamp*
+
+*storybook.log
