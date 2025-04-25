@@ -66,6 +66,9 @@ common/autoinstallers/*/.npmrc
 # Turborepo
 .turbo
 
+# locofy
+.locofy
+
 # project specific
 cjs
 dist
