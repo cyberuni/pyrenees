@@ -5,7 +5,7 @@
 	"keywords": [],
 	"main": "index.js",
 	"scripts": {
-		"build-storybook": "storybook build",
+		"build-doc": "storybook build",
 		"nuke": "rimraf node_modules",
 		"storybook": "storybook dev -p 6006",
 		"test": "vitest run"

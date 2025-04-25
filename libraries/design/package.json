@@ -21,7 +21,7 @@
 		"build:css": "run-p build:css:*",
 		"build:css:local": "tailwindcss -i ./src/tailwind.css -o ./styles.css",
 		"build:css:tokens": "tailwindcss -i ./src/tokens.css -o ./tokens.css",
-		"build:doc": "storybook build",
+		"build-doc": "storybook build",
 		"nuke": "rimraf node_modules",
 		"storybook": "storybook dev -p 6206",
 		"test": "vitest run"
