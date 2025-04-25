@@ -1,0 +1,12 @@
+{
+  "extends": "@repobuddy/typescript/tsconfig/monorepo.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "rewriteRelativeImportExtensions": true,
+    "verbatimModuleSyntax": true
+  }
+}

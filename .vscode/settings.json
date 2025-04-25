@@ -49,6 +49,9 @@
       "url": "http://json.schemastore.org/tsconfig"
     }
   ],
+  "material-icon-theme.files.associations": {
+    "tsconfig.react.json": "tsconfig"
+  },
   "prettier.useTabs": true,
   "tsimporter.emitSemicolon": false,
   "typescript.format.semicolons": "remove",

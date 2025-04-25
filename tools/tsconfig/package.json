@@ -1,0 +1,12 @@
+{
+	"name": "tsconfig",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"@repobuddy/typescript": "^1.3.0",
+		"typescript": "^5.8.3"
+	}
+}
