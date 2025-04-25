@@ -2,7 +2,10 @@
 	"private": true,
 	"license": "MIT",
 	"scripts": {
+		"asb": "turbo --filter ./apps/storybook",
+		"asb:a": "pnpm --filter ./apps/storybook",
 		"build": "turbo run build",
+		"build:doc": "turbo run build:doc",
 		"clean": "turbo run clean",
 		"coverage": "turbo run coverage",
 		"cs": "changeset",
