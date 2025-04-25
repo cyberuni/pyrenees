@@ -6,6 +6,6 @@ on:
 
 jobs:
   code:
-    uses: unional/.github/.github/workflows/pnpm-verify.yml@main
+    uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@main
     with:
       node-version: '[18, 20]'
