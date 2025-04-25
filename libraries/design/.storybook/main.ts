@@ -10,10 +10,17 @@ function getAbsolutePath(value: string): any {
 }
 const config: StorybookConfig = {
 	stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
-	addons: [getAbsolutePath('@storybook/addon-essentials'), getAbsolutePath('@storybook/experimental-addon-test')],
+	addons: [
+		getAbsolutePath('@storybook/addon-essentials'),
+		getAbsolutePath('@storybook/theming'),
+		getAbsolutePath('@storybook/experimental-addon-test'),
+	],
 	framework: {
 		name: getAbsolutePath('@storybook/react-vite'),
 		options: {},
+	},
+	features: {
+		backgroundsStoryGlobals: true,
 	},
 }
 export default config
