@@ -6,6 +6,8 @@
 		"clean": "turbo run clean",
 		"coverage": "turbo run coverage",
 		"cs": "changeset",
+		"d": "turbo --filter ./libraries/design",
+		"d:a": "pnpm --filter ./libraries/design",
 		"depcheck": "turbo run depcheck",
 		"lint": "run-p lint:*",
 		"lint:biome": "biome check",
