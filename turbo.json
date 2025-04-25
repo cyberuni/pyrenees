@@ -6,6 +6,11 @@
 			"inputs": ["*.ts", "package.json", "tsconfig*json"],
 			"outputs": ["cjs", "esm", "*.tsbuildinfo"]
 		},
+		"build:doc": {
+			"dependsOn": ["^build"],
+			"inputs": ["*.ts", "package.json", "tsconfig*json"],
+			"outputs": ["docs", "storybook-static"]
+		},
 		"clean": {
 			"cache": false
 		},
