@@ -1,0 +1,2 @@
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant hans (&:where([data-font=hans], [data-font=hans] *));

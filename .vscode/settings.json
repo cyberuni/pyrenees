@@ -24,6 +24,13 @@
     "editor.defaultFormatter": "biomejs.biome",
     "editor.formatOnSave": true
   },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
   "cSpell.words": [
     "biomejs",
     "depcheckrc",
@@ -45,6 +52,9 @@
   "editor.indentSize": "tabSize",
   "editor.tabSize": 2,
   "eslint.enable": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "files.trimTrailingWhitespace": true,
   "json.schemas": [
     {
@@ -56,6 +66,9 @@
     "tsconfig.react.json": "tsconfig"
   },
   "prettier.useTabs": true,
+  "tailwindCSS.experimental.configFile": {
+    "libraries/design/src/tailwind.css": "libraries/design/src/**"
+  },
   "tsimporter.emitSemicolon": false,
   "typescript.format.semicolons": "remove",
   "typescript.preferences.quoteStyle": "single",

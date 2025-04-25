@@ -1,0 +1,187 @@
+@theme {
+	--color-*: initial;
+}
+
+@theme inline {
+	--color-red-100: var(--pds-color-red-100);
+	--color-red-200: var(--pds-color-red-200);
+	--color-red-300: var(--pds-color-red-300);
+	--color-red-400: var(--pds-color-red-400);
+	--color-red-500: var(--pds-color-red-500);
+	--color-red-550: var(--pds-color-red-550);
+	--color-red-600: var(--pds-color-red-600);
+	--color-red-700: var(--pds-color-red-700);
+	--color-red-800: var(--pds-color-red-800);
+	--color-red-900: var(--pds-color-red-900);
+	--color-red-1000: var(--pds-color-red-1000);
+
+	--color-orange-100: var(--pds-color-orange-100);
+	--color-orange-200: var(--pds-color-orange-200);
+	--color-orange-300: var(--pds-color-orange-300);
+	--color-orange-400: var(--pds-color-orange-400);
+	--color-orange-500: var(--pds-color-orange-500);
+	--color-orange-600: var(--pds-color-orange-600);
+	--color-orange-700: var(--pds-color-orange-700);
+	--color-orange-800: var(--pds-color-orange-800);
+	--color-orange-900: var(--pds-color-orange-900);
+	--color-orange-1000: var(--pds-color-orange-1000);
+
+	--color-yellow-100: var(--pds-color-yellow-100);
+	--color-yellow-200: var(--pds-color-yellow-200);
+	--color-yellow-300: var(--pds-color-yellow-300);
+	--color-yellow-400: var(--pds-color-yellow-400);
+	--color-yellow-500: var(--pds-color-yellow-500);
+	--color-yellow-600: var(--pds-color-yellow-600);
+	--color-yellow-700: var(--pds-color-yellow-700);
+	--color-yellow-800: var(--pds-color-yellow-800);
+	--color-yellow-900: var(--pds-color-yellow-900);
+	--color-yellow-1000: var(--pds-color-yellow-1000);
+
+	--color-lime-100: var(--pds-color-lime-100);
+	--color-lime-200: var(--pds-color-lime-200);
+	--color-lime-300: var(--pds-color-lime-300);
+	--color-lime-400: var(--pds-color-lime-400);
+	--color-lime-500: var(--pds-color-lime-500);
+	--color-lime-600: var(--pds-color-lime-600);
+	--color-lime-700: var(--pds-color-lime-700);
+	--color-lime-800: var(--pds-color-lime-800);
+	--color-lime-900: var(--pds-color-lime-900);
+	--color-lime-1000: var(--pds-color-lime-1000);
+
+	--color-green-100: var(--pds-color-green-100);
+	--color-green-200: var(--pds-color-green-200);
+	--color-green-300: var(--pds-color-green-300);
+	--color-green-400: var(--pds-color-green-400);
+	--color-green-500: var(--pds-color-green-500);
+	--color-green-600: var(--pds-color-green-600);
+	--color-green-700: var(--pds-color-green-700);
+	--color-green-800: var(--pds-color-green-800);
+	--color-green-900: var(--pds-color-green-900);
+	--color-green-1000: var(--pds-color-green-1000);
+
+	--color-teal-100: var(--pds-color-teal-100);
+	--color-teal-200: var(--pds-color-teal-200);
+	--color-teal-300: var(--pds-color-teal-300);
+	--color-teal-400: var(--pds-color-teal-400);
+	--color-teal-500: var(--pds-color-teal-500);
+	--color-teal-600: var(--pds-color-teal-600);
+	--color-teal-700: var(--pds-color-teal-700);
+	--color-teal-800: var(--pds-color-teal-800);
+	--color-teal-900: var(--pds-color-teal-900);
+	--color-teal-1000: var(--pds-color-teal-1000);
+
+	--color-cyan-100: var(--pds-color-cyan-100);
+	--color-cyan-200: var(--pds-color-cyan-200);
+	--color-cyan-300: var(--pds-color-cyan-300);
+	--color-cyan-400: var(--pds-color-cyan-400);
+	--color-cyan-500: var(--pds-color-cyan-500);
+	--color-cyan-600: var(--pds-color-cyan-600);
+	--color-cyan-700: var(--pds-color-cyan-700);
+	--color-cyan-800: var(--pds-color-cyan-800);
+	--color-cyan-900: var(--pds-color-cyan-900);
+	--color-cyan-1000: var(--pds-color-cyan-1000);
+
+	--color-sky-100: var(--pds-color-sky-100);
+	--color-sky-200: var(--pds-color-sky-200);
+	--color-sky-300: var(--pds-color-sky-300);
+	--color-sky-400: var(--pds-color-sky-400);
+	--color-sky-500: var(--pds-color-sky-500);
+	--color-sky-600: var(--pds-color-sky-600);
+	--color-sky-700: var(--pds-color-sky-700);
+	--color-sky-800: var(--pds-color-sky-800);
+	--color-sky-900: var(--pds-color-sky-900);
+	--color-sky-1000: var(--pds-color-sky-1000);
+
+	--color-indigo-100: var(--pds-color-indigo-100);
+	--color-indigo-200: var(--pds-color-indigo-200);
+	--color-indigo-300: var(--pds-color-indigo-300);
+	--color-indigo-400: var(--pds-color-indigo-400);
+	--color-indigo-500: var(--pds-color-indigo-500);
+	--color-indigo-600: var(--pds-color-indigo-600);
+	--color-indigo-700: var(--pds-color-indigo-700);
+	--color-indigo-800: var(--pds-color-indigo-800);
+	--color-indigo-900: var(--pds-color-indigo-900);
+	--color-indigo-1000: var(--pds-color-indigo-1000);
+
+	--color-purple-100: var(--pds-color-purple-100);
+	--color-purple-200: var(--pds-color-purple-200);
+	--color-purple-300: var(--pds-color-purple-300);
+	--color-purple-400: var(--pds-color-purple-400);
+	--color-purple-500: var(--pds-color-purple-500);
+	--color-purple-600: var(--pds-color-purple-600);
+	--color-purple-700: var(--pds-color-purple-700);
+	--color-purple-800: var(--pds-color-purple-800);
+	--color-purple-900: var(--pds-color-purple-900);
+	--color-purple-1000: var(--pds-color-purple-1000);
+
+	--color-pink-100: var(--pds-color-pink-100);
+	--color-pink-200: var(--pds-color-pink-200);
+	--color-pink-300: var(--pds-color-pink-300);
+	--color-pink-400: var(--pds-color-pink-400);
+	--color-pink-500: var(--pds-color-pink-500);
+	--color-pink-600: var(--pds-color-pink-600);
+	--color-pink-700: var(--pds-color-pink-700);
+	--color-pink-800: var(--pds-color-pink-800);
+	--color-pink-900: var(--pds-color-pink-900);
+	--color-pink-1000: var(--pds-color-pink-1000);
+
+	--color-magenta-100: var(--pds-color-magenta-100);
+	--color-magenta-200: var(--pds-color-magenta-200);
+	--color-magenta-300: var(--pds-color-magenta-300);
+	--color-magenta-400: var(--pds-color-magenta-400);
+	--color-magenta-500: var(--pds-color-magenta-500);
+	--color-magenta-600: var(--pds-color-magenta-600);
+	--color-magenta-700: var(--pds-color-magenta-700);
+	--color-magenta-800: var(--pds-color-magenta-800);
+	--color-magenta-900: var(--pds-color-magenta-900);
+	--color-magenta-1000: var(--pds-color-magenta-1000);
+
+	--color-blue-100: var(--pds-color-blue-100);
+	--color-blue-150: var(--pds-color-blue-150);
+	--color-blue-200: var(--pds-color-blue-200);
+	--color-blue-300: var(--pds-color-blue-300);
+	--color-blue-400: var(--pds-color-blue-400);
+	--color-blue-500: var(--pds-color-blue-500);
+	--color-blue-600: var(--pds-color-blue-600);
+	--color-blue-700: var(--pds-color-blue-700);
+	--color-blue-800: var(--pds-color-blue-800);
+	--color-blue-900: var(--pds-color-blue-900);
+	--color-blue-1000: var(--pds-color-blue-1000);
+
+	--color-steel-gray-50: var(--pds-color-steel-gray-50);
+	--color-steel-gray-100: var(--pds-color-steel-gray-100);
+	--color-steel-gray-150: var(--pds-color-steel-gray-150);
+	--color-steel-gray-200: var(--pds-color-steel-gray-200);
+	--color-steel-gray-300: var(--pds-color-steel-gray-300);
+	--color-steel-gray-400: var(--pds-color-steel-gray-400);
+	--color-steel-gray-500: var(--pds-color-steel-gray-500);
+	--color-steel-gray-600: var(--pds-color-steel-gray-600);
+	--color-steel-gray-700: var(--pds-color-steel-gray-700);
+	--color-steel-gray-800: var(--pds-color-steel-gray-800);
+	--color-steel-gray-850: var(--pds-color-steel-gray-850);
+	--color-steel-gray-900: var(--pds-color-steel-gray-900);
+	--color-steel-gray-950: var(--pds-color-steel-gray-950);
+	--color-steel-gray-1000: var(--pds-color-steel-gray-1000);
+	--color-steel-gray-1050: var(--pds-color-steel-gray-1050);
+	--color-steel-gray-1100: var(--pds-color-steel-gray-1100);
+	--color-steel-gray-1150: var(--pds-color-steel-gray-1150);
+
+	--color-gray-50: var(--pds-color-gray-50);
+	--color-gray-100: var(--pds-color-gray-100);
+	--color-gray-200: var(--pds-color-gray-200);
+	--color-gray-300: var(--pds-color-gray-300);
+	--color-gray-400: var(--pds-color-gray-400);
+	--color-gray-500: var(--pds-color-gray-500);
+	--color-gray-600: var(--pds-color-gray-600);
+	--color-gray-700: var(--pds-color-gray-700);
+	--color-gray-800: var(--pds-color-gray-800);
+	--color-gray-900: var(--pds-color-gray-900);
+	--color-gray-950: var(--pds-color-gray-950);
+	--color-gray-1000: var(--pds-color-gray-1000);
+	--color-gray-1025: var(--pds-color-gray-1025);
+	--color-gray-1050: var(--pds-color-gray-1050);
+
+	--color-black: var(--pds-color-black);
+	--color-white: var(--pds-color-white);
+	--color-transparent: var(--pds-color-transparent);
+}

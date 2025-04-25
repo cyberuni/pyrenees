@@ -1,0 +1,5 @@
+@layer theme, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme) source(none);
+@import './tokens/tokens.css' prefix(pds);
+@import './tokens/variants/variants.dark.css';
+@import './tokens/variants/variants.css';

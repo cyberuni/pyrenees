@@ -1,0 +1,22 @@
+/**
+ * Dark theme variant overrides for Tailwind CSS
+ *
+ * They need to be placed together here instead of in individual files.
+ * Because multiple `* { ... }` in the resulting CSS will cause infinite loop/performance issue.
+ */
+
+@layer theme {
+	* {
+		@variant dark {
+			/* #region text-color */
+			--pds-text-color-primary: theme(--text-color-primary-dark);
+			--pds-text-color-secondary: theme(--text-color-secondary-dark);
+			--pds-text-color-hint: theme(--text-color-hint-dark);
+			--pds-text-color-link: theme(--text-color-link-dark);
+			--pds-text-color-disabled: theme(--text-color-disabled-dark);
+			--pds-text-color-success: theme(--text-color-success-dark);
+			--pds-text-color-error: theme(--text-color-error-dark);
+			/* #endregion */
+		}
+	}
+}

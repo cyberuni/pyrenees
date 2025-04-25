@@ -1,0 +1,30 @@
+@theme inline {
+	--text-color-primary-dark: var(--pds-text-color-primary-dark);
+	--text-color-primary-light: var(--pds-text-color-primary-light);
+
+	--text-color-secondary-dark: var(--pds-text-color-secondary-dark);
+	--text-color-secondary-light: var(--pds-text-color-secondary-light);
+
+	--text-color-hint-dark: var(--pds-text-color-hint-dark);
+	--text-color-hint-light: var(--pds-text-color-hint-light);
+
+	--text-color-link-dark: var(--pds-text-color-link-dark);
+	--text-color-link-light: var(--pds-text-color-link-light);
+
+	--text-color-disabled-dark: var(--pds-text-color-disabled-dark);
+	--text-color-disabled-light: var(--pds-text-color-disabled-light);
+
+	--text-color-success-dark: var(--pds-text-color-success-dark);
+	--text-color-success-light: var(--pds-text-color-success-light);
+
+	--text-color-error-dark: var(--pds-text-color-error-dark);
+	--text-color-error-light: var(--pds-text-color-error-light);
+
+	--text-color-primary: var(--pds-text-color-primary);
+	--text-color-secondary: var(--pds-text-color-secondary);
+	--text-color-hint: var(--pds-text-color-hint);
+	--text-color-link: var(--pds-text-color-link);
+	--text-color-disabled: var(--pds-text-color-disabled);
+	--text-color-success: var(--pds-text-color-success);
+	--text-color-error: var(--pds-text-color-error);
+}
