@@ -1,4 +1,5 @@
 import type { ReactRenderer } from '@storybook/react'
+import { themes } from '@storybook/theming'
 import { useEffect, type CSSProperties } from 'react'
 import { useDarkMode } from 'storybook-dark-mode'
 import type { DecoratorFunction } from 'storybook/internal/types'
@@ -8,7 +9,9 @@ export function withThemedStoryRoot(props?: StoryRootParam | undefined): Decorat
 	return function setupStoryRoot(Story, { parameters: { storyRoot } }) {
 		const dark = useDarkMode()
 		useEffect(() => {
-			document.body.style = dark ? toStyle(storyRoot?.dark ?? props?.dark) : toStyle(storyRoot?.light ?? props?.light)
+			document.body.style = dark
+				? toStyle(storyRoot?.dark ?? props?.dark ?? { backgroundColor: themes.dark.appContentBg })
+				: toStyle(storyRoot?.light ?? props?.light ?? { backgroundColor: themes.light.appContentBg })
 		}, [dark])
 		return <Story />
 	}
