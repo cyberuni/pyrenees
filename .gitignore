@@ -70,6 +70,7 @@ common/autoinstallers/*/.npmrc
 .locofy
 
 # project specific
+*.tsbuildinfo
 cjs
 dist
 esm

@@ -1,10 +1,15 @@
 import type { Preview } from '@storybook/react'
-import { themes } from '@storybook/theming'
+import { defineDarkMode, defineStoryRoot, ThemedDocsContainer, withThemedStoryRoot } from '../src/storybook/index.js'
 
 import '../src/tailwind.css'
 
 const preview: Preview = {
+	decorators: [withThemedStoryRoot()],
 	parameters: {
+		...defineStoryRoot({
+			dark: { backgroundColor: '#0B0F12' },
+			light: { backgroundColor: '#E9EEF2' },
+		}),
 		backgrounds: {
 			disable: true,
 		},
@@ -15,8 +20,9 @@ const preview: Preview = {
 			},
 		},
 		docs: {
-			theme: themes.dark,
+			container: ThemedDocsContainer,
 		},
+		...defineDarkMode(),
 	},
 }
 
