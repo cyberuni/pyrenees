@@ -35,7 +35,7 @@
 		"@commitlint/cli": "^19.8.0",
 		"@commitlint/config-conventional": "^19.8.0",
 		"@eslint/compat": "^1.2.8",
-		"@locofy/cli": "^0.0.73",
+		"@locofy/cli": "^0.0.76",
 		"@repobuddy/biome": "^1.7.1",
 		"@types/react": "^19.1.2",
 		"cross-env": "^7.0.3",
