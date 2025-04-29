@@ -1,5 +1,5 @@
 {
-	"components": [],
+	"components": ["libraries/design/src/components/badge.tsx"],
 	"projectId": "2vsSgLB9taa8fMxdnRBRUG0BDN0",
 	"projectName": "comp-lib"
 }
