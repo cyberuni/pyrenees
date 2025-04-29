@@ -36,6 +36,7 @@
 	},
 	"dependencies": {
 		"@just-web/types": "workspace:^",
+		"class-variance-authority": "^0.7.1",
 		"tailwind-merge": "^3.2.0"
 	},
 	"devDependencies": {
