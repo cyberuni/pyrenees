@@ -1,4 +1,4 @@
-import{C as w}from"./color-badge-COu62KXZ.js";import"./jsx-runtime-D_zvdyIk.js";import"./badge-DsBEe7Yc.js";const H={title:"Components/ColorBadge/color",component:w,argTypes:{color:{control:"select",options:["sky","purple","cyan","green","pink","indigo","lime","steel-gray"],description:"Color variant of the badge"},children:{control:"text",description:"Content displayed inside the badge"}}},e={name:"sky (default)",args:{children:"Default"}},r={name:"sky",args:{color:"sky",children:"Sky"}},n={name:"purple",args:{color:"purple",children:"Purple"}},a={name:"cyan",args:{color:"cyan",children:"Cyan"}},o={name:"green",args:{color:"green",children:"Green"}},s={name:"pink",args:{color:"pink",children:"Pink"}},c={name:"indigo",args:{color:"indigo",children:"Indigo"}},t={name:"lime",args:{color:"lime",children:"Lime"}},l={name:"steel-gray",args:{color:"steel-gray",children:"Steel Gray"}};var i,m,d;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`{
+import{C as w}from"./color-badge-COu62KXZ.js";import"./jsx-runtime-D_zvdyIk.js";import"./badge-DsBEe7Yc.js";const H={title:"components/ColorBadge/color",component:w,argTypes:{color:{control:"select",options:["sky","purple","cyan","green","pink","indigo","lime","steel-gray"],description:"Color variant of the badge"},children:{control:"text",description:"Content displayed inside the badge"}}},e={name:"sky (default)",args:{children:"Default"}},r={name:"sky",args:{color:"sky",children:"Sky"}},n={name:"purple",args:{color:"purple",children:"Purple"}},a={name:"cyan",args:{color:"cyan",children:"Cyan"}},o={name:"green",args:{color:"green",children:"Green"}},s={name:"pink",args:{color:"pink",children:"Pink"}},c={name:"indigo",args:{color:"indigo",children:"Indigo"}},t={name:"lime",args:{color:"lime",children:"Lime"}},l={name:"steel-gray",args:{color:"steel-gray",children:"Steel Gray"}};var i,m,d;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`{
   name: 'sky (default)',
   args: {
     children: 'Default'
@@ -15,13 +15,13 @@ import{C as w}from"./color-badge-COu62KXZ.js";import"./jsx-runtime-D_zvdyIk.js";
     color: 'purple',
     children: 'Purple'
   }
-}`,...(k=(h=n.parameters)==null?void 0:h.docs)==null?void 0:k.source}}};var S,C,f;a.parameters={...a.parameters,docs:{...(S=a.parameters)==null?void 0:S.docs,source:{originalSource:`{
+}`,...(k=(h=n.parameters)==null?void 0:h.docs)==null?void 0:k.source}}};var S,f,C;a.parameters={...a.parameters,docs:{...(S=a.parameters)==null?void 0:S.docs,source:{originalSource:`{
   name: 'cyan',
   args: {
     color: 'cyan',
     children: 'Cyan'
   }
-}`,...(f=(C=a.parameters)==null?void 0:C.docs)==null?void 0:f.source}}};var G,P,D;o.parameters={...o.parameters,docs:{...(G=o.parameters)==null?void 0:G.docs,source:{originalSource:`{
+}`,...(C=(f=a.parameters)==null?void 0:f.docs)==null?void 0:C.source}}};var G,P,D;o.parameters={...o.parameters,docs:{...(G=o.parameters)==null?void 0:G.docs,source:{originalSource:`{
   name: 'green',
   args: {
     color: 'green',
