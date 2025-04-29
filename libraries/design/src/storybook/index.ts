@@ -1,5 +1,5 @@
 export * from './components/themed-doc-container.js'
 export * from './decorators/themed-story-root.js'
-export * from './parameters/define-dark-mode.js'
+export * from './parameters/define-dark-mode-param.js'
 export * from './parameters/define-layout-param.js'
-export * from './parameters/define-story-root.js'
+export * from './parameters/define-story-root-param.js'

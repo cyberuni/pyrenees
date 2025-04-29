@@ -1,22 +1,23 @@
 import type { Preview } from '@storybook/react'
-import { defineDarkMode, defineStoryRoot, ThemedDocsContainer, withThemedStoryRoot } from '../src/storybook/index.js'
+import { defineDarkModeParam, ThemedDocsContainer, withThemedStoryRoot } from '../src/storybook/index.js'
 
 import '../fonts/lato.css'
 import '../src/tailwind.css'
 
 const preview: Preview = {
-	decorators: [withThemedStoryRoot()],
-	parameters: {
-		...defineStoryRoot({
+	decorators: [
+		withThemedStoryRoot({
 			style: {
 				fontFamily: 'var(--pds-font-lato)',
 				color: 'var(--pds-text-color-primary)',
 			},
 			themes: {
-				dark: { style: { backgroundColor: 'var(--pds-color-steel-gray-1150)' } },
-				light: { style: { backgroundColor: 'var(--pds-color-steel-gray-150)' } },
+				dark: { style: { backgroundColor: 'var(--pds-color-steel-gray-1150)' }, 'data-theme': 'dark' },
+				light: { style: { backgroundColor: 'var(--pds-color-steel-gray-150)' }, 'data-theme': 'light' },
 			},
 		}),
+	],
+	parameters: {
 		backgrounds: { disable: true },
 		controls: {
 			matchers: {
@@ -25,7 +26,7 @@ const preview: Preview = {
 			},
 		},
 		docs: { container: ThemedDocsContainer },
-		...defineDarkMode(),
+		...defineDarkModeParam(),
 	},
 }
 

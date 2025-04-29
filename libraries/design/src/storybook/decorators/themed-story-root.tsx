@@ -3,15 +3,47 @@ import { themes } from '@storybook/theming'
 import { useEffect, type CSSProperties } from 'react'
 import { useDarkMode } from 'storybook-dark-mode'
 import type { DecoratorFunction } from 'storybook/internal/types'
-import type { StoryRootParam } from '../parameters/define-story-root'
+import type { StoryRootParam } from '../parameters/define-story-root-param'
 
+/**
+ * Returns a decorator that configures styling and themes for stories.
+ *
+ * This decorator applies common styles and theme-specific styles to the story root element.
+ * It automatically switches between light and dark themes.
+ *
+ * @param props - Optional parameters to customize the story root styling and theming
+ * @returns A Storybook decorator function
+ */
 export function withThemedStoryRoot(props?: StoryRootParam | undefined): DecoratorFunction<ReactRenderer> {
 	return function setupStoryRoot(Story, { parameters: { storyRoot } }) {
 		const dark = useDarkMode()
 		useEffect(() => {
-			document.body.style = dark
-				? toStyle(storyRoot?.dark ?? props?.dark ?? { backgroundColor: themes.dark.appContentBg })
-				: toStyle(storyRoot?.light ?? props?.light ?? { backgroundColor: themes.light.appContentBg })
+			const commonStyle = {
+				...props?.style,
+				...storyRoot?.style,
+			}
+			const theme = dark
+				? {
+						backgroundColor: themes.dark.appContentBg,
+						...props?.themes?.dark,
+						...storyRoot?.themes?.dark,
+					}
+				: {
+						backgroundColor: themes.light.appContentBg,
+						...props?.themes?.light,
+						...storyRoot?.themes?.light,
+					}
+
+			document.body.style = toStyle({
+				...commonStyle,
+				...theme.style,
+			})
+			Object.keys(theme).forEach((key) => {
+				if (key.startsWith('data-')) {
+					const value = theme[key]
+					document.documentElement.setAttribute(key, value)
+				}
+			})
 		}, [dark])
 		return <Story />
 	}

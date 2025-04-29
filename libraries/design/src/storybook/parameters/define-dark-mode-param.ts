@@ -17,7 +17,13 @@ const defaultDarkModeParam: DarkModeParam = {
 	classTarget: 'html',
 }
 
-export function defineDarkMode(darkMode?: DarkModeParam | undefined) {
+/**
+ * Defines a dark mode parameter for Storybook stories.
+ *
+ * @param darkMode - Optional dark mode parameter that overrides default values
+ * @returns A Storybook parameter object with the configured dark mode settings
+ */
+export function defineDarkModeParam(darkMode?: DarkModeParam | undefined) {
 	return {
 		darkMode: {
 			...defaultDarkModeParam,
