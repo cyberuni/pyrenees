@@ -38,6 +38,7 @@
     "esbuild",
     "formatjs",
     "jscoverage",
+    "lato",
     "locofy",
     "pinst",
     "pkgs",
@@ -68,6 +69,7 @@
     "tsconfig.react.json": "tsconfig"
   },
   "prettier.useTabs": true,
+  "tailwindCSS.classFunctions": ["cva", "cx"],
   "tailwindCSS.experimental.configFile": {
     "libraries/design/src/tailwind.css": "libraries/design/src/**"
   },
