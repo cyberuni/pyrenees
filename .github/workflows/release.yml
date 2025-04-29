@@ -21,4 +21,4 @@ jobs:
     uses: cyberuni/.github/.github/workflows/pnpm-docs.yml@main
     needs: release
     with:
-      publish-dir: ./apps/storybook/storybook-static
+      publish-dir: ./libraries/design/storybook-static
