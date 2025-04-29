@@ -3,8 +3,9 @@ import { defineLayoutParam, defineStoryRootParam } from '../storybook/index.js'
 import { AppContainer, Page } from './index.js'
 
 export default {
-	tags: ['new', 'cat:container'],
+	title: 'components/AppContainer',
 	component: AppContainer,
+	tags: ['new', 'cat:container'],
 	parameters: {
 		...defineLayoutParam('fullscreen'),
 		...defineStoryRootParam({

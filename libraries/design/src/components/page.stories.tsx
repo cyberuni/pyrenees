@@ -3,8 +3,9 @@ import { defineLayoutParam, defineStoryRootParam } from '../storybook/index.js'
 import { AppContainer, Page } from './index.js'
 
 export default {
-	tags: ['new', 'cat:pane', 'version:1.0.0'],
+	title: 'components/Page',
 	component: Page,
+	tags: ['new', 'cat:pane', 'version:1.0.0'],
 	decorators: [
 		(Story) => (
 			<AppContainer>
