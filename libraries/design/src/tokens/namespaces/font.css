@@ -1,0 +1,5 @@
+@theme static {
+	--font-*: initial;
+	--font-lato: Lato, sans-serif;
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono;
+}
