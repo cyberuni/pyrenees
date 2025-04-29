@@ -4,6 +4,7 @@
 	"description": "",
 	"type": "module",
 	"exports": {
+		"./fonts/font.css": "./fonts/lato.css",
 		"./storybook": {
 			"types": "./esm/storybook/index.d.ts",
 			"default": "./esm/storybook/index.js"
@@ -14,6 +15,7 @@
 	},
 	"main": "index.js",
 	"files": [
+		"fonts",
 		"tokens.css",
 		"src",
 		"!src/stories",
