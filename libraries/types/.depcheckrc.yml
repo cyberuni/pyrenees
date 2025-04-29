@@ -1,0 +1,5 @@
+ignorePatterns:
+  - coverage
+  - esm
+ignores:
+  - "tsconfig" # for TypeScript
