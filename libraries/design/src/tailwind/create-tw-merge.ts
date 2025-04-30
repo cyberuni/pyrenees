@@ -1,10 +1,17 @@
 import { extendTailwindMerge } from 'tailwind-merge'
 import { trimPrefix } from './_trim-prefix.js'
 
+export interface CreateTwMergeOptions {
+	/**
+	 * The prefix used by the library or app.
+	 */
+	prefix: string
+}
+
 /**
  * Creates a tailwind merge function.
  */
-export function createTwMerge({ prefix }: { prefix: string }) {
+export function createTwMerge({ prefix }: CreateTwMergeOptions) {
 	return extendTailwindMerge<'font-size-only' | 'font-size-leading-tracking' | 'font-style-weight'>({
 		prefix,
 		experimentalParseClassName: ({ className, parseClassName }) => {

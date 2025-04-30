@@ -1,6 +1,6 @@
 const knownPrefixes = [
 	'tw[\\w]*:',
-	'p[\\w]+:',
+	'pds:',
 	'spf-nav:',
 	'spf:',
 	'cm:',
@@ -15,7 +15,7 @@ const knownPrefixes = [
 	'uda:',
 	'iot:',
 ]
-const regex = new RegExp(`^-?(${knownPrefixes.join('|')})(.*)`)
+const regex = new RegExp(`^-?(${knownPrefixes.join('|')})?(.*)`)
 
 export function trimPrefix(className: string) {
 	const match = className.match(regex)

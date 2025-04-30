@@ -77,6 +77,10 @@
   },
   "tsimporter.emitSemicolon": false,
   "typescript.format.semicolons": "remove",
+  "typescript.preferences.importModuleSpecifierEnding": "js",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
   "typescript.preferences.quoteStyle": "single",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.suggest.autoImports": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
