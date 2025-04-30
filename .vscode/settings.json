@@ -48,9 +48,11 @@
     "tsbuddy",
     "tsbuildinfo",
     "turborepo",
+    "twds",
     "vite",
     "vitest",
-    "wscript"
+    "wscript",
+    "ztna"
   ],
   "editor.indentSize": "tabSize",
   "editor.tabSize": 2,
