@@ -2,7 +2,7 @@ import type { ReactRenderer } from '@storybook/react'
 import { themes } from '@storybook/theming'
 import { useEffect, type CSSProperties } from 'react'
 import type { DecoratorFunction } from 'storybook/internal/types'
-import { useColorTheme } from '../../hooks/use-color-theme'
+import { useColorTheme } from '../../react/hooks/use-color-theme'
 import type { StoryRootParam } from '../parameters/define-story-root-param'
 
 /**

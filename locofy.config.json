@@ -1,10 +1,12 @@
 {
 	"components": [
-		"libraries/design/src/components/app-container.tsx",
-		"libraries/design/src/components/badge.tsx",
-		"libraries/design/src/components/code-badge.tsx",
-		"libraries/design/src/components/color-badge.tsx",
-		"libraries/design/src/components/page.tsx"
+		"libraries/design/src/react/components/app-container.tsx",
+		"libraries/design/src/react/components/badge.tsx",
+		"libraries/design/src/react/components/button.tsx",
+		"libraries/design/src/react/components/card.tsx",
+		"libraries/design/src/react/components/code-badge.tsx",
+		"libraries/design/src/react/components/color-badge.tsx",
+		"libraries/design/src/react/components/page.tsx"
 	],
 	"wrapper": "./wrapper.tsx",
 	"projectId": "2vsSgLB9taa8fMxdnRBRUG0BDN0",

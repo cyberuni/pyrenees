@@ -1,6 +1,6 @@
 import type { DataAttributeProps } from '@just-web/types'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
-import { twMerge } from '../internal/utils/tw-merge.js'
+import { twMerge } from '../../internal/utils/tw-merge.js'
 
 export type CardProps = ComponentPropsWithoutRef<'div'> &
 	DataAttributeProps & {

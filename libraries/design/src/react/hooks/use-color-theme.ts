@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getColorTheme, observeColorTheme, type ColorTheme } from '../utils/color-theme.js'
+import { getColorTheme, observeColorTheme, type ColorTheme } from '../../utils/color-theme.js'
 
 export function useColorTheme() {
 	const [colorTheme, setColorTheme] = useState<ColorTheme>(getColorTheme())
