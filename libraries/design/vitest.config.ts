@@ -14,16 +14,47 @@ export default mergeConfig(
 			workspace: [
 				{
 					extends: true,
-					plugins: [storybookTest({ configDir: path.join(dirname, '.storybook') })],
-
+					plugins: [
+						storybookTest({ configDir: path.join(dirname, '.storybook') }),
+						{
+							name: 'override',
+							config(base) {
+								return mergeConfig(
+									{
+										test: {
+											browser: {
+												enabled: true,
+												headless: true,
+												instances: [
+													{
+														name: 'chromium',
+														browser: 'chromium',
+													},
+												],
+												provider: 'playwright',
+											},
+											include: [
+												'{src,source,code,tests}/**/*.{spec,test,unit,accept,integrate,system,perf,stress,study}.{js,cjs,mjs,ts,cts,mts}',
+												'{src,source,code,tests}/**/*.{spec,test,unit,accept,integrate,system,perf,stress,study}.{jsx,tsx}',
+												'{src,source,code,tests}/**/*.{spec,test,unit,accept,integrate,system,perf,stress,study}.browser*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}',
+											],
+											coverage: {
+												include: ['{src,source,code}/**/*.{js,mjs,cjs,ts,jsx,tsx,cts,mts}'],
+												exclude: [
+													'**/*.{spec,test,unit,accept,integrate,system,perf,stress,study}.{js,jsx,cjs,mjs,ts,tsx,cts,mts}',
+													'**/*.{spec,test,unit,accept,integrate,system,perf,stress,study}.*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}',
+													'**/*.stories.{js,mjs,jsx,tsx}',
+												],
+											},
+										},
+									},
+									base,
+								)
+							},
+						},
+					],
 					test: {
 						name: 'design',
-						browser: {
-							enabled: true,
-							headless: true,
-							instances: [{ browser: 'chromium' }],
-							provider: 'playwright',
-						},
 						setupFiles: ['.storybook/vitest.setup.ts'],
 					},
 				},
