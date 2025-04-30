@@ -6,7 +6,7 @@ import type { AdjustExactOptionalProps } from 'type-plus'
 export function useContextProps<T, U extends SlotProps, E extends Element>(
 	props: T & SlotProps,
 	ref: Ref<E>,
-	context: Context<Rac.ContextValue<U, E>>
+	context: Context<Rac.ContextValue<U, E>>,
 ): [T, Ref<E>] {
 	return racUCP(props as any, ref, context as any)
 }

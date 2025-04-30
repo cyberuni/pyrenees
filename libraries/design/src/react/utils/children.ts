@@ -42,7 +42,7 @@ export type ChildrenState<T> = T & {
  */
 export function resolveChildren<S extends { defaultChildren: ReactNode }>(
 	state: S,
-	children: ReactNode | undefined | ((state: S) => ReactNode | undefined)
+	children: ReactNode | undefined | ((state: S) => ReactNode | undefined),
 ): ReactNode | null | undefined {
-	return typeof children === 'function' ? children(state) : children ?? state.defaultChildren
+	return typeof children === 'function' ? children(state) : (children ?? state.defaultChildren)
 }
