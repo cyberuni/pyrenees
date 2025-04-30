@@ -18,11 +18,12 @@ export default mergeConfig(
 				name: 'override',
 				config(base) {
 					return mergeConfig(
-						{
+						defineConfig({
 							test: {
 								browser: {
 									enabled: true,
 									headless: true,
+									screenshotFailures: false,
 									instances: [
 										{
 											name: `${base.test!.name} (chromium)`,
@@ -45,7 +46,7 @@ export default mergeConfig(
 									],
 								},
 							},
-						},
+						}),
 						base,
 					)
 				},
