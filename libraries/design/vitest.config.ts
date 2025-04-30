@@ -1,6 +1,7 @@
 import { storybookTest } from '@storybook/experimental-addon-test/vitest-plugin'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { storybookVis } from 'storybook-addon-vis/vitest-plugin'
 import { defineConfig, mergeConfig } from 'vitest/config'
 import config from './vite.config.js'
 
@@ -16,6 +17,7 @@ export default mergeConfig(
 					extends: true,
 					plugins: [
 						storybookTest({ configDir: path.join(dirname, '.storybook') }),
+						storybookVis(),
 						{
 							name: 'override',
 							config(base) {

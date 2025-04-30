@@ -70,6 +70,7 @@ common/autoinstallers/*/.npmrc
 .locofy
 
 # project specific
+**/__vis__/local
 *.tsbuildinfo
 cjs
 dist

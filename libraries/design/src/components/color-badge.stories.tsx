@@ -35,6 +35,7 @@ export const WithCustomClassName: Story = {
 }
 
 export const AllColors: Story = {
+	tags: ['snapshot'],
 	render: () => (
 		<div className="pds:flex pds:flex-wrap pds:gap-2">
 			<ColorBadge color="sky">Sky</ColorBadge>
