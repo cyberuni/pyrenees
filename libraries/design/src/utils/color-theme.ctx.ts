@@ -4,5 +4,5 @@ export const ctx = {
 	},
 	getDocumentElement() {
 		return globalThis.document.documentElement
-	}
+	},
 }
