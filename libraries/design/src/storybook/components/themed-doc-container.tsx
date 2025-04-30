@@ -28,9 +28,6 @@ export function ThemedDocsContainer(props: PropsWithChildren<{ context: DocsCont
 
 		return () => props.context.channel.removeListener(DARK_MODE_EVENT_NAME, setDark)
 	}, [props.context.channel])
-	return (
-		<DocsContainer {...props} theme={themes[isDark ? 'dark' : 'light']}>
-			{props.children}
-		</DocsContainer>
-	)
+
+	return <DocsContainer {...props} theme={themes[isDark ? 'dark' : 'light']} />
 }
