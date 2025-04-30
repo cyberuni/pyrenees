@@ -9,11 +9,12 @@ export type ColorTheme = 'dark' | 'light'
  */
 export function getColorTheme(): ColorTheme {
 	const root = ctx.getDocumentElement()
-	const dataTheme = root.getAttribute('data-theme')
-	if (dataTheme) return dataTheme as ColorTheme
 
 	if (root.classList.contains('dark')) return 'dark'
 	if (root.classList.contains('light')) return 'light'
+
+	const dataTheme = root.getAttribute('data-theme')
+	if (dataTheme) return dataTheme as ColorTheme
 
 	const isDarkScheme = ctx.matchMedia('(prefers-color-scheme: dark)').matches
 	return isDarkScheme ? 'dark' : 'light'

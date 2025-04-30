@@ -1,8 +1,8 @@
 import type { ReactRenderer } from '@storybook/react'
 import { themes } from '@storybook/theming'
 import { useEffect, type CSSProperties } from 'react'
-import { useDarkMode } from 'storybook-dark-mode'
 import type { DecoratorFunction } from 'storybook/internal/types'
+import { useColorTheme } from '../../hooks/use-color-theme'
 import type { StoryRootParam } from '../parameters/define-story-root-param'
 
 /**
@@ -16,23 +16,24 @@ import type { StoryRootParam } from '../parameters/define-story-root-param'
  */
 export function withThemedStoryRoot(props?: StoryRootParam | undefined): DecoratorFunction<ReactRenderer> {
 	return function setupStoryRoot(Story, { parameters: { storyRoot } }) {
-		const dark = useDarkMode()
+		const colorTheme = useColorTheme()
 		useEffect(() => {
 			const commonStyle = {
 				...props?.style,
 				...storyRoot?.style,
 			}
-			const theme = dark
-				? {
-						backgroundColor: themes.dark.appContentBg,
-						...props?.themes?.dark,
-						...storyRoot?.themes?.dark,
-					}
-				: {
-						backgroundColor: themes.light.appContentBg,
-						...props?.themes?.light,
-						...storyRoot?.themes?.light,
-					}
+			const theme =
+				colorTheme === 'dark'
+					? {
+							backgroundColor: themes.dark.appContentBg,
+							...props?.themes?.dark,
+							...storyRoot?.themes?.dark,
+						}
+					: {
+							backgroundColor: themes.light.appContentBg,
+							...props?.themes?.light,
+							...storyRoot?.themes?.light,
+						}
 
 			document.body.style = toStyle({
 				...commonStyle,
@@ -44,7 +45,7 @@ export function withThemedStoryRoot(props?: StoryRootParam | undefined): Decorat
 					document.documentElement.setAttribute(key, value)
 				}
 			})
-		}, [dark])
+		}, [colorTheme])
 		return <Story />
 	}
 }
