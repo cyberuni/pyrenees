@@ -1,10 +1,13 @@
 {
   "recommendations": [
     "aaron-bond.better-comments",
-    "streetsidesoftware.code-spell-checker",
-    "dbaeumer.vscode-eslint",
-    "yzhang.markdown-all-in-one",
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss",
     "davidanson.vscode-markdownlint",
-    "biomejs.biome"
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "unional.vscode-sort-package-json",
+    "yzhang.markdown-all-in-one"
   ]
 }
