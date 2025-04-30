@@ -16,7 +16,7 @@
 		},
 		"coverage": {
 			"dependsOn": ["^build"],
-			"outputs": ["coverage/**"]
+			"outputs": ["__vis__/**", "coverage/**"]
 		},
 		"depcheck": {
 			"dependsOn": ["^build"]
@@ -31,7 +31,8 @@
 			"dependsOn": ["build"]
 		},
 		"test": {
-			"dependsOn": ["^build"]
+			"dependsOn": ["^build"],
+			"outputs": ["__vis__/**"]
 		}
 	}
 }

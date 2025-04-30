@@ -29,10 +29,12 @@
 		"build:css:local": "tailwindcss -i ./src/tailwind.css -o ./styles.css",
 		"build:css:tokens": "tailwindcss -i ./src/tokens.css -o ./tokens.css",
 		"build-doc": "storybook build",
+		"coverage": "vitest run --coverage",
 		"nuke": "rimraf node_modules",
 		"sb": "storybook dev -p 6206",
 		"storybook": "storybook dev -p 6206",
-		"test": "vitest run"
+		"test": "vitest run",
+		"w": "vitest"
 	},
 	"dependencies": {
 		"@just-web/types": "workspace:^",

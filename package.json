@@ -27,7 +27,8 @@
 		"test": "turbo run test",
 		"verify": "run-p lint verify:pkgs",
 		"verify:pkgs": "turbo run lint build coverage depcheck size",
-		"version": "changeset version"
+		"version": "changeset version",
+		"w": "vitest"
 	},
 	"dependencies": {
 		"@biomejs/biome": "^1.9.4",
