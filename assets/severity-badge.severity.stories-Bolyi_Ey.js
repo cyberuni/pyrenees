@@ -1,4 +1,4 @@
-import{S as C}from"./severity-badge-CPuEifaI.js";import"./jsx-runtime-D_zvdyIk.js";import"./index-BV_IynQ4.js";import"./index-DEvoek5M.js";import"./index-D4lIrffr.js";import"./badge-9TyooWln.js";const b={title:"components/SeverityBadge/severity",component:C,parameters:{layout:"centered"}},e={name:"default = critical",args:{}},r={name:"critical",args:{severity:"critical"}},a={name:"high",args:{severity:"high"}},s={name:"medium",args:{severity:"medium"}},t={name:"low",args:{severity:"low"}},o={name:"lowest",args:{severity:"lowest"}};var c,i,n;e.parameters={...e.parameters,docs:{...(c=e.parameters)==null?void 0:c.docs,source:{originalSource:`{
+import{S as C}from"./page-CO_WdoJO.js";import"./jsx-runtime-D_zvdyIk.js";import"./index-CKi3-S8O.js";import"./index-D4lIrffr.js";import"./index-CuAL4s_r.js";import"./index-DsJinFGm.js";const O={title:"components/badges/SeverityBadge/severity",component:C,parameters:{layout:"centered"}},e={name:"default = critical",args:{}},r={name:"critical",args:{severity:"critical"}},a={name:"high",args:{severity:"high"}},s={name:"medium",args:{severity:"medium"}},t={name:"low",args:{severity:"low"}},o={name:"lowest",args:{severity:"lowest"}};var c,i,n;e.parameters={...e.parameters,docs:{...(c=e.parameters)==null?void 0:c.docs,source:{originalSource:`{
   name: 'default = critical',
   args: {}
 }`,...(n=(i=e.parameters)==null?void 0:i.docs)==null?void 0:n.source}}};var m,p,d;r.parameters={...r.parameters,docs:{...(m=r.parameters)==null?void 0:m.docs,source:{originalSource:`{
@@ -26,4 +26,4 @@ import{S as C}from"./severity-badge-CPuEifaI.js";import"./jsx-runtime-D_zvdyIk.j
   args: {
     severity: 'lowest'
   }
-}`,...(B=(x=o.parameters)==null?void 0:x.docs)==null?void 0:B.source}}};const j=["Default","Critical","High","Medium","Low","Lowest"];export{r as Critical,e as Default,a as High,t as Low,o as Lowest,s as Medium,j as __namedExportsOrder,b as default};
+}`,...(B=(x=o.parameters)==null?void 0:x.docs)==null?void 0:B.source}}};const j=["Default","Critical","High","Medium","Low","Lowest"];export{r as Critical,e as Default,a as High,t as Low,o as Lowest,s as Medium,j as __namedExportsOrder,O as default};

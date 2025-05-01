@@ -1,3 +1,0 @@
-import{j as r}from"./jsx-runtime-D_zvdyIk.js";import{t}from"./badge-9TyooWln.js";function o({children:e,className:n}){return r.jsx("div",{className:t("pds:box-border pds:flex pds:w-screen pds:h-screen pds:bg-steel-gray-850",n),children:e})}o.__docgenInfo={description:`A top-level app container component that provides a full viewport box with flexbox layout.
-
-@param children - The content to be rendered inside the container`,methods:[],displayName:"AppContainer",props:{children:{required:!0,tsType:{name:"ReactNode"},description:""},className:{required:!1,tsType:{name:"union",raw:"string | undefined",elements:[{name:"string"},{name:"undefined"}]},description:""}}};export{o as A};
