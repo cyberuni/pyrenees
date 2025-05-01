@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { ColorBadge } from './color-badge.js'
+import { ColorBadge } from '../../index.js'
 
 const meta = {
-	title: 'components/ColorBadge',
+	title: 'components/badges/ColorBadge',
 	component: ColorBadge,
 	argTypes: {
 		color: {
