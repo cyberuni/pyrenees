@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { defineLayoutParam, defineStoryRootParam } from '../../storybook/index.js'
-import { AppContainer, Page } from './index.js'
+import { AppContainer, CodeBadge, Page } from './index.js'
 
 export default {
 	title: 'components/AppContainer',
@@ -25,8 +25,9 @@ export const Specification: StoryObj = {
 	render() {
 		return (
 			<AppContainer>
-				<Page className="pds:flex pds:justify-center pds:items-center pds:relative">
-					The <code>AppContainer</code> claim the full screen width and height, and flex its children.
+				<Page className="pds:flex pds:justify-center pds:items-center pds:relative pds:text-xs">
+					The <CodeBadge>AppContainer</CodeBadge> claims the full screen width and height, and layout its children as
+					flex.
 					<div className="pds:top-0 pds:left-0 pds:absolute">top-left</div>
 					<div className="pds:top-0 pds:right-0 pds:absolute">top-right</div>
 					<div className="pds:bottom-0 pds:left-0 pds:absolute">bottom-left</div>

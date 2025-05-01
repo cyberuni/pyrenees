@@ -6,7 +6,7 @@ export function CodeBadge({ className, ...props }: BadgeProps) {
 		<Badge
 			{...props}
 			className={twJoin(
-				'pds:font-mono pds:bg-black/10 pds:dark:bg-white/10 pds:border-steel-gray-500 pds:dark:border-steel-gray-500 pds:border pds:border-solid',
+				'pds:font-mono pds:mx-0.5 pds:bg-black/10 pds:dark:bg-white/10 pds:border-steel-gray-500 pds:dark:border-steel-gray-500 pds:border pds:border-solid',
 				className,
 			)}
 		/>
