@@ -21,8 +21,6 @@ export const SeverityVariants: Story = {
 				<SeverityBadge severity="medium" />
 				<SeverityBadge severity="low" />
 				<SeverityBadge severity="lowest" />
-				<SeverityBadge severity="success" />
-				<SeverityBadge severity="info" />
 			</div>
 		</div>
 	),

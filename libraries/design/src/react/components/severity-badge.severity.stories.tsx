@@ -51,17 +51,3 @@ export const Lowest: Story = {
 		severity: 'lowest',
 	},
 }
-
-export const Success: Story = {
-	name: 'success',
-	args: {
-		severity: 'success',
-	},
-}
-
-export const Info: Story = {
-	name: 'info',
-	args: {
-		severity: 'info',
-	},
-}
