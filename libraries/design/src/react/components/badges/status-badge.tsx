@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 import { defineMessages, useIntl } from 'react-intl'
-import { classNames } from '../../utils/classNames.js'
-import { Badge, type BadgeProps } from './badges/badge.js'
+import { classNames } from '../../../utils/classNames.js'
+import { Badge, type BadgeProps } from './badge.js'
 
 export interface StatusBadgeProps extends BadgeProps {
 	/**
