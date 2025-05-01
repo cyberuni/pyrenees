@@ -1,1 +1,0 @@
-import{j as o}from"./jsx-runtime-D_zvdyIk.js";import{B as s,t as r}from"./badge-DsBEe7Yc.js";function a({className:d,...e}){return o.jsx(s,{...e,className:r("pds:font-mono pds:bg-black/10 pds:dark:bg-white/10 pds:border-steel-gray-500 pds:dark:border-steel-gray-500 pds:border pds:border-solid",d)})}a.__docgenInfo={description:"",methods:[],displayName:"CodeBadge"};export{a as C};
