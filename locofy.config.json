@@ -2,6 +2,7 @@
 	"components": [
 		"libraries/design/src/react/components/app-container.tsx",
 		"libraries/design/src/react/components/badge.tsx",
+		"libraries/design/src/react/components/severity-badge.tsx",
 		"libraries/design/src/react/components/button.tsx",
 		"libraries/design/src/react/components/card.tsx",
 		"libraries/design/src/react/components/code-badge.tsx",

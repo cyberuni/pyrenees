@@ -1,0 +1,67 @@
+import type { Meta, StoryObj } from '@storybook/react'
+import { SeverityBadge } from './severity-badge.js'
+
+const meta: Meta<typeof SeverityBadge> = {
+	title: 'components/SeverityBadge/severity',
+	component: SeverityBadge,
+	parameters: {
+		layout: 'centered',
+	},
+}
+
+export default meta
+type Story = StoryObj<typeof SeverityBadge>
+
+export const Default: Story = {
+	name: 'default = critical',
+	args: {},
+}
+
+export const Critical: Story = {
+	name: 'critical',
+	args: {
+		severity: 'critical',
+	},
+}
+
+export const High: Story = {
+	name: 'high',
+	args: {
+		severity: 'high',
+	},
+}
+
+export const Medium: Story = {
+	name: 'medium',
+	args: {
+		severity: 'medium',
+	},
+}
+
+export const Low: Story = {
+	name: 'low',
+	args: {
+		severity: 'low',
+	},
+}
+
+export const Lowest: Story = {
+	name: 'lowest',
+	args: {
+		severity: 'lowest',
+	},
+}
+
+export const Success: Story = {
+	name: 'success',
+	args: {
+		severity: 'success',
+	},
+}
+
+export const Info: Story = {
+	name: 'info',
+	args: {
+		severity: 'info',
+	},
+}
