@@ -1,0 +1,18 @@
+@theme inline {
+	--body-text-xs: var(--pds-body-text-xs);
+	--body-text-sm: var(--pds-body-text-sm);
+	--body-text-md: var(--pds-body-text-md);
+	--body-text-lg: var(--pds-body-text-lg);
+
+	--body-leading: var(--pds-body-leading);
+
+	--body-font-style: var(--pds-body-font-style);
+	--body-emphasized-font-style: var(--pds-body-emphasized-font-style);
+	--body-strong-font-style: var(--pds-body-strong-font-style);
+	--body-strong-emphasized-font-style: var(--pds-body-strong-emphasized-font-style);
+
+	--body-font-weight: var(--pds-body-font-weight);
+	--body-emphasized-font-weight: var(--pds-body-emphasized-font-weight);
+	--body-strong-font-weight: var(--pds-body-strong-font-weight);
+	--body-strong-emphasized-font-weight: var(--pds-body-strong-emphasized-font-weight);
+}

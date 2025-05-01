@@ -1,0 +1,69 @@
+@utility detail-text-color {
+	color: --theme(--detail-text-color);
+}
+
+@utility detail-text-sm {
+	font-size: --theme(--detail-text-sm);
+	line-height: --theme(--detail-leading);
+	letter-spacing: --theme(--detail-tracking);
+}
+
+@utility detail-text-md {
+	font-size: --theme(--detail-text-md);
+	line-height: --theme(--detail-leading);
+	letter-spacing: --theme(--detail-tracking);
+}
+
+@utility detail-text-lg {
+	font-size: --theme(--detail-text-lg);
+	line-height: --theme(--detail-leading);
+	letter-spacing: --theme(--detail-tracking);
+}
+
+@utility detail-leading {
+	line-height: --theme(--detail-leading);
+}
+
+@utility detail-tracking {
+	letter-spacing: --theme(--detail-tracking);
+}
+
+@utility detail-normal {
+	font-style: --theme(--detail-font-style);
+	font-weight: --theme(--detail-font-weight);
+}
+
+@utility detail-emphasized {
+	font-style: --theme(--detail-emphasized-font-style);
+	font-weight: --theme(--detail-emphasized-font-weight);
+}
+
+@utility detail-strong {
+	font-style: --theme(--detail-strong-font-style);
+	font-weight: --theme(--detail-strong-font-weight);
+}
+
+@utility detail-strong-emphasized {
+	font-style: --theme(--detail-strong-emphasized-font-style);
+	font-weight: --theme(--detail-strong-emphasized-font-weight);
+}
+
+@utility detail-light {
+	font-style: --theme(--detail-light-font-style);
+	font-weight: --theme(--detail-light-font-weight);
+}
+
+@utility detail-light-emphasized {
+	font-style: --theme(--detail-light-emphasized-font-style);
+	font-weight: --theme(--detail-light-emphasized-font-weight);
+}
+
+@utility detail-light-strong {
+	font-style: --theme(--detail-light-strong-font-style);
+	font-weight: --theme(--detail-light-strong-font-weight);
+}
+
+@utility detail-light-strong-emphasized {
+	font-style: --theme(--detail-light-strong-emphasized-font-style);
+	font-weight: --theme(--detail-light-strong-emphasized-font-weight);
+}

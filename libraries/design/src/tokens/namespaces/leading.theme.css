@@ -1,0 +1,5 @@
+@theme inline {
+	--leading-100: var(--pds-leading-100);
+	--leading-200: var(--pds-leading-200);
+	--leading-300: var(--pds-leading-300);
+}

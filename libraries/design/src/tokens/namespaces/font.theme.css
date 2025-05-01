@@ -1,0 +1,5 @@
+@theme inline {
+	--font-*: initial;
+	--font-lato: var(--pds-font-lato);
+	--font-mono: var(--pds-font-mono);
+}

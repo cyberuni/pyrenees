@@ -1,0 +1,32 @@
+@utility heading-text-* {
+	font-size: --value(--heading-text- *);
+	line-height: --theme(--heading-leading);
+}
+
+@utility heading-leading {
+	line-height: --theme(--heading-leading);
+}
+
+@utility heading-uppercase {
+	text-transform: uppercase;
+}
+
+@utility heading-normal {
+	font-style: --theme(--heading-font-style);
+	font-weight: --theme(--heading-font-weight);
+}
+
+@utility heading-emphasized {
+	font-style: --theme(--heading-emphasized-font-style);
+	font-weight: --theme(--heading-emphasized-font-weight);
+}
+
+@utility heading-strong {
+	font-style: --theme(--heading-strong-font-style);
+	font-weight: --theme(--heading-strong-font-weight);
+}
+
+@utility heading-strong-emphasized {
+	font-style: --theme(--heading-strong-emphasized-font-style);
+	font-weight: --theme(--heading-strong-emphasized-font-weight);
+}

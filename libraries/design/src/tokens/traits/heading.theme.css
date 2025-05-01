@@ -1,0 +1,22 @@
+@theme inline {
+	--heading-text-xs: var(--pds-heading-text-xs);
+	--heading-text-sm: var(--pds-heading-text-sm);
+	--heading-text-md: var(--pds-heading-text-md);
+	--heading-text-lg: var(--pds-heading-text-lg);
+	--heading-text-xl: var(--pds-heading-text-xl);
+	--heading-text-2xl: var(--pds-heading-text-2xl);
+	--heading-text-3xl: var(--pds-heading-text-3xl);
+	--heading-text-4xl: var(--pds-heading-text-4xl);
+
+	--heading-leading: var(--pds-heading-leading);
+
+	--heading-font-style: var(--pds-heading-font-style);
+	--heading-emphasized-font-style: var(--pds-heading-emphasized-font-style);
+	--heading-strong-font-style: var(--pds-heading-strong-font-style);
+	--heading-strong-emphasized-font-style: var(--pds-heading-strong-emphasized-font-style);
+
+	--heading-font-weight: var(--pds-heading-font-weight);
+	--heading-emphasized-font-weight: var(--pds-heading-emphasized-font-weight);
+	--heading-strong-font-weight: var(--pds-heading-strong-font-weight);
+	--heading-strong-emphasized-font-weight: var(--pds-heading-strong-emphasized-font-weight);
+}

@@ -1,0 +1,9 @@
+@theme inline {
+	--code-text-xs: var(--pds-code-text-xs);
+	--code-text-sm: var(--pds-code-text-sm);
+	--code-text-md: var(--pds-code-text-md);
+	--code-text-lg: var(--pds-code-text-lg);
+
+	--code-leading: var(--pds-code-leading);
+	--code-font-weight: var(--pds-code-font-weight);
+}

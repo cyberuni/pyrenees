@@ -1,0 +1,19 @@
+@theme static {
+	--text-*: initial;
+	--text-25: 10px;
+	--text-50: 11px;
+	--text-75: 12px;
+	--text-100: 14px;
+	--text-200: 16px;
+	--text-300: 18px;
+	--text-400: 20px;
+	--text-500: 22px;
+	--text-600: 26px;
+	--text-700: 30px;
+	--text-800: 34px;
+	--text-900: 38px;
+	--text-1000: 42px;
+	--text-1100: 48px;
+	--text-1200: 54px;
+	--text-1300: 60px;
+}

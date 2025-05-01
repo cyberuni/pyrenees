@@ -1,0 +1,7 @@
+@theme inline {
+	--tracking-*: initial;
+	--tracking-tight: var(--pds-tracking-tight);
+	--tracking-normal: var(--pds-tracking-normal);
+	--tracking-wide: var(--pds-tracking-wide);
+	--tracking-widest: var(--pds-tracking-widest);
+}

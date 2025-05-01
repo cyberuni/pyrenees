@@ -1,3 +1,12 @@
 @import './namespaces/color.css';
 @import './namespaces/font.css';
+@import './namespaces/font-weight.css';
+@import './namespaces/leading.css';
+@import './namespaces/text.css';
 @import './namespaces/text-color.css';
+@import './namespaces/tracking.css';
+
+@import './traits/body.css';
+@import './traits/code.css';
+@import './traits/detail.css';
+@import './traits/heading.css';

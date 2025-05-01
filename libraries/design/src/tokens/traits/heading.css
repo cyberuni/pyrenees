@@ -1,0 +1,22 @@
+@theme static {
+	--heading-text-xs: theme(--text-75);
+	--heading-text-sm: theme(--text-100);
+	--heading-text-md: theme(--text-200);
+	--heading-text-lg: theme(--text-300);
+	--heading-text-xl: theme(--text-500);
+	--heading-text-2xl: theme(--text-700);
+	--heading-text-3xl: theme(--text-900);
+	--heading-text-4xl: theme(--text-1100);
+
+	--heading-leading: theme(--leading-100);
+
+	--heading-font-style: normal;
+	--heading-emphasized-font-style: italic;
+	--heading-strong-font-style: normal;
+	--heading-strong-emphasized-font-style: italic;
+
+	--heading-font-weight: theme(--font-weight-normal);
+	--heading-emphasized-font-weight: theme(--font-weight-semibold);
+	--heading-strong-font-weight: theme(--font-weight-bold);
+	--heading-strong-emphasized-font-weight: theme(--font-weight-bold);
+}

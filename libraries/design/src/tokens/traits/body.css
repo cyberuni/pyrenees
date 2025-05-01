@@ -1,0 +1,18 @@
+@theme static {
+	--body-text-xs: theme(--text-50);
+	--body-text-sm: theme(--text-75);
+	--body-text-md: theme(--text-100);
+	--body-text-lg: theme(--text-200);
+
+	--body-leading: theme(--leading-200);
+
+	--body-font-style: normal;
+	--body-emphasized-font-style: italic;
+	--body-strong-font-style: normal;
+	--body-strong-emphasized-font-style: italic;
+
+	--body-font-weight: theme(--font-weight-normal);
+	--body-emphasized-font-weight: theme(--font-weight-normal);
+	--body-strong-font-weight: theme(--font-weight-bold);
+	--body-strong-emphasized-font-weight: theme(--font-weight-bold);
+}

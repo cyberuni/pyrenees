@@ -1,0 +1,9 @@
+@theme inline {
+	--font-weight-*: initial;
+	--font-weight-light: var(--pds-font-weight-light);
+	--font-weight-normal: var(--pds-font-weight-normal);
+	--font-weight-medium: var(--pds-font-weight-medium);
+	--font-weight-semibold: var(--pds-font-weight-semibold);
+	--font-weight-bold: var(--pds-font-weight-bold);
+	--font-weight-extrabold: var(--pds-font-weight-extrabold);
+}

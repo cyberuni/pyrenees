@@ -1,2 +1,11 @@
 @import './namespaces/color.theme.css';
+@import './namespaces/font.theme.css';
+@import './namespaces/font-weight.css';
+@import './namespaces/leading.css';
 @import './namespaces/text-color.theme.css';
+@import './namespaces/tracking.css';
+
+@import './traits/body.theme.css';
+@import './traits/code.theme.css';
+@import './traits/detail.theme.css';
+@import './traits/heading.theme.css';

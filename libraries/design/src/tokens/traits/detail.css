@@ -1,0 +1,30 @@
+@theme static {
+	--detail-text-sm: theme(--text-50);
+	--detail-text-md: theme(--text-75);
+	--detail-text-lg: theme(--text-100);
+
+	--detail-leading: theme(--leading-100);
+	--detail-tracking: theme(--tracking-wide);
+
+	--detail-text-color: theme(--text-color-secondary);
+
+	--detail-font-style: normal;
+	--detail-emphasized-font-style: italic;
+	--detail-strong-font-style: normal;
+	--detail-strong-emphasized-font-style: italic;
+
+	--detail-font-weight: theme(--font-weight-bold);
+	--detail-emphasized-font-weight: theme(--font-weight-bold);
+	--detail-strong-font-weight: theme(--font-weight-bold);
+	--detail-strong-emphasized-font-weight: theme(--font-weight-bold);
+
+	--detail-light-font-style: normal;
+	--detail-light-emphasized-font-style: italic;
+	--detail-light-strong-font-style: normal;
+	--detail-light-strong-emphasized-font-style: italic;
+
+	--detail-light-font-weight: theme(--font-weight-normal);
+	--detail-light-emphasized-font-weight: theme(--font-weight-normal);
+	--detail-light-strong-font-weight: theme(--font-weight-normal);
+	--detail-light-strong-emphasized-font-weight: theme(--font-weight-normal);
+}

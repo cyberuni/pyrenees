@@ -1,0 +1,34 @@
+@theme inline {
+	--detail-text-sm: var(--pds-detail-text-sm);
+	--detail-text-md: var(--pds-detail-text-md);
+	--detail-text-lg: var(--pds-detail-text-lg);
+
+	--detail-leading: var(--pds-detail-leading);
+	--detail-tracking: var(--pds-detail-tracking);
+
+	--detail-text-color: var(--pds-detail-text-color);
+
+	--detail-font-style: var(--pds-detail-font-style);
+	--detail-emphasized-font-style: var(--pds-detail-emphasized-font-style);
+	--detail-strong-font-style: var(--pds-detail-strong-font-style);
+	--detail-strong-emphasized-font-style: var(--pds-detail-strong-emphasized-font-style);
+
+	--detail-font-weight: var(--pds-detail-font-weight);
+	--detail-emphasized-font-weight: var(--pds-detail-emphasized-font-weight);
+	--detail-strong-font-weight: var(--pds-detail-strong-font-weight);
+	--detail-strong-emphasized-font-weight: var(--pds-detail-strong-emphasized-font-weight);
+
+	--detail-light-font-style: var(--pds-detail-light-font-style);
+	--detail-light-emphasized-font-style: var(--pds-detail-light-emphasized-font-style);
+	--detail-light-strong-font-style: var(--pds-detail-light-strong-font-style);
+	--detail-light-strong-emphasized-font-style: var(
+		--pds-detail-light-strong-emphasized-font-style
+	);
+
+	--detail-light-font-weight: var(--pds-detail-light-font-weight);
+	--detail-light-emphasized-font-weight: var(--pds-detail-light-emphasized-font-weight);
+	--detail-light-strong-font-weight: var(--pds-detail-light-strong-font-weight);
+	--detail-light-strong-emphasized-font-weight: var(
+		--pds-detail-light-strong-emphasized-font-weight
+	);
+}

@@ -1,0 +1,23 @@
+@utility body-text-* {
+	font-size: --value(--body-text- *);
+	line-height: --theme(--body-leading);
+}
+
+@utility body-normal {
+	font-style: --theme(--body-font-style);
+	font-weight: --theme(--body-font-weight);
+}
+
+@utility body-emphasized {
+	font-style: --theme(--body-emphasized-font-style);
+	font-weight: --theme(--body-emphasized-font-weight);
+}
+
+@utility body-strong {
+	font-style: --theme(--body-strong-font-style);
+	font-weight: --theme(--body-strong-font-weight);
+}
+@utility body-strong-emphasized {
+	font-style: --theme(--body-strong-emphasized-font-style);
+	font-weight: --theme(--body-strong-emphasized-font-weight);
+}

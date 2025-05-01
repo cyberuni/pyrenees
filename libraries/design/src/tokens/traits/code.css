@@ -1,0 +1,10 @@
+@theme static {
+	--code-text-xs: theme(--text-50);
+	--code-text-sm: theme(--text-75);
+	--code-text-md: theme(--text-100);
+	--code-text-lg: theme(--text-200);
+
+	--code-leading: theme(--leading-200);
+
+	--code-font-weight: theme(--font-weight-light);
+}

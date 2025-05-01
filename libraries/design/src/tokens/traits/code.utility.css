@@ -1,0 +1,12 @@
+@utility code-text-* {
+	font-size: --value(--code-text- *);
+	line-height: --theme(--code-leading);
+}
+
+@utility code-leading {
+	line-height: --theme(--code-leading);
+}
+
+@utility code-normal {
+	font-weight: --theme(--code-font-weight);
+}
