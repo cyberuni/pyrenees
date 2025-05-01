@@ -1,14 +1,15 @@
 {
 	"components": [
 		"libraries/design/src/react/components/app-container.tsx",
-		"libraries/design/src/react/components/badge.tsx",
+		"libraries/design/src/react/components/badges/badge.tsx",
+		"libraries/design/src/react/components/badges/code-badge.tsx",
+		"libraries/design/src/react/components/badges/color-badge.tsx",
+		"libraries/design/src/react/components/badges/severity-badge.tsx",
+		"libraries/design/src/react/components/badges/status-badge.tsx",
 		"libraries/design/src/react/components/button.tsx",
 		"libraries/design/src/react/components/card.tsx",
-		"libraries/design/src/react/components/code-badge.tsx",
-		"libraries/design/src/react/components/color-badge.tsx",
-		"libraries/design/src/react/components/page.tsx",
-		"libraries/design/src/react/components/severity-badge.tsx",
-		"libraries/design/src/react/components/status-badge.tsx"
+		"libraries/design/src/react/components/data-grid/ag-grid.tsx",
+		"libraries/design/src/react/components/page.tsx"
 	],
 	"wrapper": "./wrapper.tsx",
 	"projectId": "2vsSgLB9taa8fMxdnRBRUG0BDN0",
