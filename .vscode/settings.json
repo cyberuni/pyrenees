@@ -38,6 +38,7 @@
     "esbuild",
     "formatjs",
     "jscoverage",
+    "jsxdev",
     "lato",
     "locofy",
     "pinst",
@@ -75,6 +76,15 @@
   "tailwindCSS.experimental.configFile": {
     "libraries/design/src/tailwind.css": "libraries/design/src/**"
   },
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    "twm`([^`]*)",
+    "'@apply([^']*)':",
+    ["classNames\\(([^)]*)\\)", "'([^']*)'"],
+    ["twMerge\\(([^)]*)\\)", "'([^']*)'"],
+    "toComparableClassName\\(([^)]*)\\)",
+    "toHaveClass\\(([^)]*)\\)"
+  ],
   "tsimporter.emitSemicolon": false,
   "typescript.format.semicolons": "remove",
   "typescript.preferences.importModuleSpecifierEnding": "js",

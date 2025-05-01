@@ -38,11 +38,13 @@
 	},
 	"dependencies": {
 		"@just-web/types": "workspace:^",
+		"@react-aria/focus": "^3.20.2",
 		"@react-types/shared": "^3.29.0",
-		"react-aria-components": "^1.8.0",
 		"class-variance-authority": "^0.7.1",
-		"type-plus": "8.0.0-beta.7",
-		"tailwind-merge": "^3.2.0"
+		"react-aria-components": "^1.8.0",
+		"react-intl": "^7.1.11",
+		"tailwind-merge": "^3.2.0",
+		"type-plus": "8.0.0-beta.7"
 	},
 	"devDependencies": {
 		"@storybook/addon-essentials": "^8.6.12",

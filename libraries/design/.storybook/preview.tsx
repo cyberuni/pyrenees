@@ -1,4 +1,6 @@
 import type { Preview } from '@storybook/react'
+import { IntlProvider } from 'react-intl'
+// @ts-ignore
 import { defineDarkModeParam, ThemedDocsContainer, withThemedStoryRoot } from '../src/storybook/index.js'
 
 import '../fonts/lato.css'
@@ -16,6 +18,11 @@ const preview: Preview = {
 				light: { style: { backgroundColor: 'var(--pds-color-steel-gray-150)' }, 'data-theme': 'light' },
 			},
 		}),
+		(Story) => (
+			<IntlProvider locale="en-US" defaultLocale="en-US">
+				<Story />
+			</IntlProvider>
+		),
 	],
 	parameters: {
 		backgrounds: { disable: true },
