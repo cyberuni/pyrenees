@@ -3,7 +3,7 @@ import { defineLayoutParam, defineStoryRootParam } from '../../../storybook/inde
 import { AppContainer, CodeBadge, Page } from '../../index.js'
 
 export default {
-	title: 'components/AppContainer',
+	title: 'components/containers/AppContainer',
 	component: AppContainer,
 	tags: ['new', 'cat:container'],
 	parameters: {
