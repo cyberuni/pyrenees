@@ -11,10 +11,10 @@ export default {
 		...defineStoryRootParam({
 			themes: {
 				dark: {
-					style: { backgroundColor: 'var(--pds-color-steel-gray-850' },
+					style: { backgroundColor: 'var(--pds-color-steel-gray-850)' },
 				},
 				light: {
-					style: { backgroundColor: 'var(--pds-color-steel-gray-850' },
+					style: { backgroundColor: 'var(--pds-color-steel-gray-850)' },
 				},
 			},
 		}),
