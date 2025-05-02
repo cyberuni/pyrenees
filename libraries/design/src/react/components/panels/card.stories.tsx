@@ -12,7 +12,9 @@ export default {
 		(Story) => (
 			<AppContainer>
 				<Page>
-					<Story />
+					<BodyContainer>
+						<Story />
+					</BodyContainer>
 				</Page>
 			</AppContainer>
 		),
@@ -23,24 +25,22 @@ export default {
 export const BasicUsage: StoryObj = {
 	render() {
 		return (
-			<BodyContainer>
-				<Card>
-					<Header
-						title="Card Title"
-						controls={
-							<ControlBar>
-								<IconButton>
-									<DashboardIcon />
-								</IconButton>
-								<IconButton>
-									<CopilotIcon />
-								</IconButton>
-							</ControlBar>
-						}
-					/>
-					<BodyContainer>Card content</BodyContainer>
-				</Card>
-			</BodyContainer>
+			<Card>
+				<Header
+					title="Card Title"
+					controls={
+						<ControlBar>
+							<IconButton>
+								<DashboardIcon />
+							</IconButton>
+							<IconButton>
+								<CopilotIcon />
+							</IconButton>
+						</ControlBar>
+					}
+				/>
+				<BodyContainer>Card content</BodyContainer>
+			</Card>
 		)
 	},
 }
