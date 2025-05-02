@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{S as s}from"./themed-doc-container-23MYOY87.js";function p(i){return function(a,{name:n,parameters:{docs:t,storySwatch:o}}){var r;return e.jsx(s,{message:((r=t==null?void 0:t.description)==null?void 0:r.story)??n,...i,...o,children:e.jsx(a,{})})}}export{p as w};
