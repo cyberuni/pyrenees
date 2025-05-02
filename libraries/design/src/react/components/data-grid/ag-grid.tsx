@@ -3,6 +3,6 @@ import { AgGridReact, type AgGridReactProps } from 'ag-grid-react'
 
 export type AgGridProps = AgGridReactProps
 
-export function AGGrid({ theme = themeQuartz, ...props }: AgGridProps) {
+export function AgGrid({ theme = themeQuartz, ...props }: AgGridProps) {
 	return <AgGridReact theme={theme} {...props} />
 }
