@@ -6,8 +6,8 @@ import { ResultPanel } from '../index.js'
 const meta: Meta<typeof ResultPanel> = {
 	component: ResultPanel,
 	parameters: {
-		sourceLink: 'components/result_panel.tsx'
-	}
+		sourceLink: 'components/result_panel.tsx',
+	},
 }
 
 export default meta
@@ -37,13 +37,13 @@ export const Basic: Story = {
 		await userEvent.click(btn)
 		const result = await canvas.findByTestId('result-panel')
 		expect(result.innerText).toEqual(`[{"a":1}]`)
-	}
+	},
 }
 
 export const CustomLabel: Story = {
 	render() {
 		return <ResultPanel label="Custom Label" value={JSON.stringify({ a: 1 }, null, 2)} />
-	}
+	},
 }
 
 export const CustomCSS: Story = {
@@ -54,26 +54,26 @@ export const CustomCSS: Story = {
 				value={JSON.stringify({ a: 1 }, null, '\t')}
 			/>
 		)
-	}
+	},
 }
 
 export const AsSamp: Story = {
 	args: {
 		elementType: 'samp',
-		value: JSON.stringify({ a: 1, b: 2, c: 3 }, null, '\t')
-	}
+		value: JSON.stringify({ a: 1, b: 2, c: 3 }, null, '\t'),
+	},
 }
 
 export const AsCode: Story = {
 	args: {
 		elementType: 'code',
-		value: JSON.stringify({ a: 1, b: 2, c: 3 }, null, '\t')
-	}
+		value: JSON.stringify({ a: 1, b: 2, c: 3 }, null, '\t'),
+	},
 }
 
 export const AsKbd: Story = {
 	args: {
 		elementType: 'kbd',
-		value: JSON.stringify({ a: 1, b: 2, c: 3 }, null, '\t')
-	}
+		value: JSON.stringify({ a: 1, b: 2, c: 3 }, null, '\t'),
+	},
 }
