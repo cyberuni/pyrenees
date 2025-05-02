@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react'
+import type { CreateTuple } from 'type-plus'
 
 export interface StyleProp<T> {
 	/**
@@ -47,4 +48,23 @@ export function resolveStyle<S extends { defaultStyle: CSSProperties | undefined
 	style: CSSProperties | undefined | ((state: S) => CSSProperties | undefined),
 ): CSSProperties {
 	return typeof style === 'function' ? (style(state) ?? {}) : { ...state.defaultStyle, ...style }
+}
+
+/**
+ * Retrieves CSS custom property values from the `document.body` element.
+ *
+ * @param values - Array of CSS custom property names to retrieve, must be in the format `--property-name`
+ * @returns Array of property values corresponding to the requested custom properties
+ */
+export function getCSSPropValues<V extends Array<`--${string}`>>(
+	element: HTMLElement,
+	...values: V
+): CreateTuple<V['length'], string>
+export function getCSSPropValues<V extends Array<`--${string}`>>(...values: V): CreateTuple<V['length'], string>
+export function getCSSPropValues<V extends Array<`--${string}`>>(element: unknown, ...values: V) {
+	if (typeof element === 'string') {
+		return getCSSPropValues(globalThis.document.body, element as `--${string}`, ...values)
+	}
+	const style = globalThis.getComputedStyle(element as HTMLElement)
+	return values.map((v) => style.getPropertyValue(v)) as any
 }
