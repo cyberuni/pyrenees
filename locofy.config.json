@@ -9,6 +9,7 @@
 		"libraries/design/src/react/components/buttons/button.tsx",
 		"libraries/design/src/react/components/buttons/close-button.tsx",
 		"libraries/design/src/react/components/buttons/icon-button.tsx",
+		"libraries/design/src/react/components/charts/chart.tsx",
 		"libraries/design/src/react/components/containers/app-container.tsx",
 		"libraries/design/src/react/components/containers/body-container.tsx",
 		"libraries/design/src/react/components/containers/header.tsx",
