@@ -6,7 +6,7 @@ export function Page({ className, children }: PropsWithChildren<{ className?: st
 	return (
 		<HeadingContext.Provider
 			value={{
-				fontSize: '2xl',
+				fontSize: 'xl',
 			}}
 		>
 			<div
