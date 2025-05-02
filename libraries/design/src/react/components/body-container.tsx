@@ -1,7 +1,7 @@
 import type { DataAttributeProps } from '@just-web/types'
 import type { ComponentPropsWithoutRef } from 'react'
 import { twMerge } from '../../internal/utils/tw-merge.js'
-import { LoadingIcon } from '../icons/loading_icon.js'
+import { LoadingIcon } from './icons/loading-icon.js'
 
 export type BodyContainerProps = ComponentPropsWithoutRef<'div'> &
 	DataAttributeProps & {

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { LoadingIcon } from '../index.js'
+import { LoadingIcon } from '../../index.js'
 
 const meta: Meta<typeof LoadingIcon> = {
 	title: 'components/icons/LoadingIcon',
@@ -14,7 +14,7 @@ export const Default: Story = {}
 export const Sizes: Story = {
 	render() {
 		return (
-			<div className="twds:flex twds:space-x-4">
+			<div className="pds:flex pds:space-x-4">
 				<LoadingIcon size="xxs" />
 				<LoadingIcon size="xs" />
 				<LoadingIcon size="sm" />

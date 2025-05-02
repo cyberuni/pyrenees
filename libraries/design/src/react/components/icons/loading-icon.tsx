@@ -1,10 +1,10 @@
 import { useFocusable } from '@react-aria/focus'
 import { forwardRef } from 'react'
 import { useIntl } from 'react-intl'
-import { twMerge } from '../../internal/utils/tw-merge.js'
-import type { FocusableElement } from '../react-aria-components/focus.js'
-import { ProgressCircleIcon } from './progress_circle_icon.js'
-import type { SemanticIconProps } from './types.js'
+import { twMerge } from '../../../internal/utils/tw-merge.js'
+import { ProgressCircleIcon } from '../../icons/progress-circle-icon.js'
+import type { SemanticIconProps } from '../../icons/types.js'
+import type { FocusableElement } from '../../react-aria-components/focus.js'
 
 export const LoadingIcon = forwardRef<FocusableElement, SemanticIconProps>(({ className, ...props }, ref) => {
 	const intl = useIntl()
@@ -12,7 +12,7 @@ export const LoadingIcon = forwardRef<FocusableElement, SemanticIconProps>(({ cl
 
 	return (
 		<ProgressCircleIcon
-			className={twMerge('twds:animate-spin', className)}
+			className={twMerge('pds:animate-spin', className)}
 			{...focusableProps}
 			{...props}
 			ariaLabel={intl.formatMessage({

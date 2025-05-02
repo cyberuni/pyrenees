@@ -1,3 +1,5 @@
+export * from './components/result-panel.js'
+export * from './components/spec-table.js'
 export * from './components/story-swatch.js'
 export * from './components/themed-doc-container.js'
 export * from './decorators/themed-story-root.js'

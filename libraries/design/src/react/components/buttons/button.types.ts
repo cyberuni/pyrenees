@@ -1,6 +1,6 @@
 import type { DataAttributeProps } from '@just-web/types'
-import type { ComponentSizeProp } from '../../types.js'
-import type { ButtonProps as AriaButtonProps, RenderProps } from '../react-aria-components/_index.js'
+import type { ComponentSizeProp } from '../../../types.js'
+import type { ButtonProps as AriaButtonProps, RenderProps } from '../../react-aria-components/_index.js'
 
 export interface ButtonLayoutProps extends ButtonSizeProp {
 	/**
