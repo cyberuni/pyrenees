@@ -12,6 +12,7 @@ const config: StorybookConfig = {
 	stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
 	addons: [
 		getAbsolutePath('@storybook/addon-essentials'),
+		'@storybook/addon-storysource',
 		getAbsolutePath('@storybook/theming'),
 		getAbsolutePath('@storybook/addon-themes'),
 		getAbsolutePath('@storybook/experimental-addon-test'),
