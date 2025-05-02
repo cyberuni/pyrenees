@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { tw } from '../../index.js'
-import { BodyContainer } from '../index.js'
+import { tw } from '../../../index.js'
+import { BodyContainer } from '../../index.js'
 
 const meta: Meta = {
 	title: 'components/layout/BodyContainer',

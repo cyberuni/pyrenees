@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { defineLayoutParam, defineStoryRootParam } from '../../storybook/index.js'
-import { AppContainer, CodeBadge, Page } from '../index.js'
+import { defineLayoutParam, defineStoryRootParam } from '../../../storybook/index.js'
+import { AppContainer, CodeBadge, Page } from '../../index.js'
 
 export default {
 	title: 'components/AppContainer',
