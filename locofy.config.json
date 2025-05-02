@@ -1,15 +1,24 @@
 {
 	"components": [
-		"libraries/design/src/react/components/app-container.tsx",
 		"libraries/design/src/react/components/badges/badge.tsx",
 		"libraries/design/src/react/components/badges/code-badge.tsx",
 		"libraries/design/src/react/components/badges/color-badge.tsx",
 		"libraries/design/src/react/components/badges/severity-badge.tsx",
 		"libraries/design/src/react/components/badges/status-badge.tsx",
-		"libraries/design/src/react/components/button.tsx",
-		"libraries/design/src/react/components/card.tsx",
+		"libraries/design/src/react/components/bars/control-bar.tsx",
+		"libraries/design/src/react/components/buttons/button.tsx",
+		"libraries/design/src/react/components/buttons/close-button.tsx",
+		"libraries/design/src/react/components/buttons/icon-button.tsx",
+		"libraries/design/src/react/components/containers/app-container.tsx",
+		"libraries/design/src/react/components/containers/body-container.tsx",
+		"libraries/design/src/react/components/containers/header.tsx",
+		"libraries/design/src/react/components/containers/title-container.tsx",
 		"libraries/design/src/react/components/data-grid/ag-grid.tsx",
-		"libraries/design/src/react/components/page.tsx"
+		"libraries/design/src/react/components/icons/loading-icon.tsx",
+		"libraries/design/src/react/components/panels/card.tsx",
+		"libraries/design/src/react/components/panels/page.tsx",
+		"libraries/design/src/react/components/surfaces/icon-surface.tsx",
+		"libraries/design/src/react/components/typography/heading.tsx"
 	],
 	"wrapper": "./wrapper.tsx",
 	"projectId": "2vsSgLB9taa8fMxdnRBRUG0BDN0",
