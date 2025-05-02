@@ -50,8 +50,8 @@ export const OverrideClassName: Story = {
 			<SpecRow>
 				<SpecCell>Small</SpecCell>
 				<SpecCell>
-					<IconSurface size="sm" className="pds:bg-cyan-600">
-						<CarIcon size="sm" />
+					<IconSurface size="sm" className="pds:bg-steel-gray-600">
+						<CarIcon size="sm" className="pds:fill-strata" />
 					</IconSurface>
 				</SpecCell>
 				<SpecCodeCell>w-4 h-4</SpecCodeCell>
@@ -59,8 +59,8 @@ export const OverrideClassName: Story = {
 			<SpecRow>
 				<SpecCell>Medium</SpecCell>
 				<SpecCell>
-					<IconSurface className="pds:bg-cyan-600">
-						<CarIcon />
+					<IconSurface className="pds:bg-steel-gray-600">
+						<CarIcon size="md" className="pds:fill-strata" />
 					</IconSurface>
 				</SpecCell>
 				<SpecCodeCell>w-5 h-5</SpecCodeCell>

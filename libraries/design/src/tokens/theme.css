@@ -1,4 +1,5 @@
 @import './namespaces/color.theme.css';
+@import './namespaces/color.brand.theme.css';
 @import './namespaces/font.theme.css';
 @import './namespaces/font-weight.css';
 @import './namespaces/leading.css';

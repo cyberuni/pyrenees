@@ -1,0 +1,7 @@
+@theme inline {
+	--color-panw: var(--pds-color-panw);
+	--color-strata: var(--pds-color-strata);
+	--color-prisma: var(--pds-color-prisma);
+	--color-cortex: var(--pds-color-cortex);
+	--color-unit42: var(--pds-color-unit42);
+}
