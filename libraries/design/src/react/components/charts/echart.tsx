@@ -1,20 +1,20 @@
-import type { EChartsOption } from 'echarts'
+import type { EChartsOption as Options } from 'echarts'
 import * as echarts from 'echarts'
 import { useEffect } from 'react'
 import { twMerge } from '../../../internal/utils/tw-merge.js'
 
-export interface ChartProps {
+export interface EChartProps {
 	/**
 	 * The element id of the chart
 	 */
 	id: string
-	option: ChartsOption
+	option: EChartsOption
 	className?: string | undefined
 }
 
-export type ChartsOption = { [k in keyof EChartsOption]?: EChartsOption[k] | undefined }
+export type EChartsOption = { [k in keyof Options]?: Options[k] | undefined }
 
-export function Chart({ id, className, option }: ChartProps) {
+export function EChart({ id, className, option }: EChartProps) {
 	useEffect(() => {
 		const myChart = echarts.init(document.getElementById(id))
 

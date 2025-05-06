@@ -1,7 +1,7 @@
 import { getCSSPropValues } from '../../utils/style.js'
-import type { ChartsOption } from './chart.js'
+import type { EChartsOption } from './echart.js'
 
-export function defineChartOption(option: ChartsOption, element = globalThis.document.body): ChartsOption {
+export function defineChartOption(option: EChartsOption, element = globalThis.document.body): EChartsOption {
 	const { title, ...rest } = option
 	return {
 		title: defineTitle(title, element),
@@ -9,7 +9,7 @@ export function defineChartOption(option: ChartsOption, element = globalThis.doc
 	}
 }
 
-function defineTitle(title: ChartsOption['title'], element: HTMLElement): ChartsOption['title'] {
+function defineTitle(title: EChartsOption['title'], element: HTMLElement): EChartsOption['title'] {
 	const [fontFamily, fontSize] = getCSSPropValues(element, '--pds-font-lato', '--pds-heading-text-md')
 	if (Array.isArray(title)) {
 		return title

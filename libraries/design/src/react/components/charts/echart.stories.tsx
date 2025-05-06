@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Chart } from './chart.js'
+import { EChart } from './echart.js'
 import { defineChartOption } from './options.js'
 
 const meta: Meta = {
@@ -14,7 +14,7 @@ export default meta
 export const Basic: StoryObj = {
 	render() {
 		return (
-			<Chart
+			<EChart
 				id="main"
 				option={defineChartOption({
 					title: {
