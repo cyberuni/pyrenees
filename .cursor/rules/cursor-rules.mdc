@@ -72,4 +72,6 @@ function badExample() {
 ```
 ````
 
-6. Update [master.mdc](mdc:.cursor/rules/master.mdc) to reference the new rule and describe its purpose
+6. Default rule type to `Agent Requested` and add the rule purpose to the `description`.
+
+7. Update [master.mdc](mdc:.cursor/rules/master.mdc) to reference the new rule and describe its purpose

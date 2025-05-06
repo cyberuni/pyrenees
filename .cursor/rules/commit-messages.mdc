@@ -1,5 +1,5 @@
 ---
-description: Use this rule when generate commit message
+description: How to generate commit message
 globs:
 alwaysApply: false
 ---
