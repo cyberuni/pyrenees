@@ -1,0 +1,69 @@
+---
+description: How to generate Storybook stories
+globs:
+alwaysApply: false
+---
+# Creating Storybook Stories
+
+This rule explains how to create and organize Storybook stories for React components in this project. Follow these guidelines to ensure consistency and discoverability.
+
+## Step-by-step Instructions
+
+1. **Colocate your story file**: Place the `.stories.tsx` file next to the component file it documents.
+2. **Use the correct filename**: Name your story file `<component-name>.stories.ts[x]` (e.g., `copy-button.stories.tsx`).
+3. **Add sub-context to filename**: When creating story file for a specific property of a component, add the property name to the filename in `kabab-case` (e.g. `copy-button.is-disabled.stories.tsx`)
+4. **Import the component** you want to document.
+5. **Set up the default export** with `title`, `component`, and optional `parameters`, `tags`, and `argTypes`.
+6. **Define stories** as named exports using the `StoryObj` type and the `args` property for different variations.
+7. **Use the `play` function** for interactive or testable stories if needed.
+8. **Use the `autodocs` tag** to enable automatic documentation generation.
+9. **Preview your story in Storybook** to verify it renders and behaves as expected.
+10. When you use this rule file, let me know this rule file is being used in the chat by mentioning the rule filename.
+
+## Example
+
+```typescript
+import type { Meta, StoryObj } from '@storybook/react'
+import { CopyButton } from './copy-button.tsx'
+
+const meta = {
+  title: 'components/CopyButton/isDisabled',
+  component: Button,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} satisfies Meta<typeof Button>
+
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Enabled: Story = {
+	name: 'isDisabled: false',
+  args: {
+    label: 'Copy Button',
+		isDisabled: false
+  },
+}
+
+export const Disabled: Story = {
+	name: 'isDisabled: true',
+  args: {
+    label: 'Copy Button',
+		isDisabled: true
+  },
+}
+```
+
+## Best Practices
+- Place stories next to their components for discoverability.
+- Use descriptive story names and args to show different states.
+- Use the `autodocs` tag for automatic documentation.
+- Use the `play` function for interactive/testable stories.
+- Keep stories simple and focused on a single variation or use case.
+
+When you use this rule file, let me know this rule file is being used in the chat by mentioning the rule filename.
