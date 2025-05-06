@@ -1,0 +1,51 @@
+---
+description: Use this rule when generate commit message
+globs:
+alwaysApply: false
+---
+# Commit Message Guidelines
+
+Commit messages in this project must follow the [Conventional Commits](mdc:https:/www.conventionalcommits.org) specification, as enforced by [`commitlint.config.js`](mdc:commitlint.config.js).
+
+This rule should be used when generating commit messages.
+
+## Step-by-step Instructions
+
+1. Analyze what are the changes by looking at git status. If there are staged changes, look at only the staged changes.
+2. Write your commit message in the following format:
+
+	```
+	<type>[optional scope]: <description>
+
+	[optional body]
+
+	[optional footer(s)]
+	```
+
+3. Use a relevant **type** (e.g., `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `test`, `perf`).
+4. Optionally include a **scope** to clarify the area of change (e.g., `api`, `ui`).
+5. Keep the **description** concise and clear. It should be about the purpose of the change, not what is the change.
+6. Optionally add a body for more details and footers for issues or breaking changes.
+7. Commit messages are automatically checked on commit via Husky and `commitlint`.
+8. There are **no strict case or length requirements** for subject, header, or body (see [`commitlint.config.js`](mdc:commitlint.config.js)).
+
+## Example
+
+```text
+feat(api): add user authentication
+
+Implements JWT-based authentication for the user login endpoint.
+
+BREAKING CHANGE: The login endpoint now requires a password field.
+```
+
+## Linting
+- Commit messages are automatically checked on commit via Husky and `commitlint`.
+- There are **no strict case or length requirements** for subject, header, or body (see [`commitlint.config.js`](mdc:commitlint.config.js)).
+
+## Special Handling
+
+If the commit only contains files in the `.cursor/rules`, `.github`, and `.vscode` folders,
+the commit message type should always be `chore`.
+
+When you use this rule file, let me know this rule file is being used in the chat by mentioning the rule filename.
