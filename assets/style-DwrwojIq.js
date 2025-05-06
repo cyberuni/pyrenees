@@ -1,0 +1,1 @@
+function u(t,o){return typeof o=="function"?o(t)??{}:{...t.defaultStyle,...o}}function n(t,...o){if(typeof t=="string")return n(globalThis.document.body,t,...o);const r=globalThis.getComputedStyle(t);return o.map(e=>r.getPropertyValue(e))}export{n as g,u as r};
