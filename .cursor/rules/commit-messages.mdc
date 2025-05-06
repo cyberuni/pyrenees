@@ -11,7 +11,7 @@ This rule should be used when generating commit messages.
 
 ## Step-by-step Instructions
 
-1. Analyze what are the changes by looking at git status. If there are staged changes, look at only the staged changes.
+1. Analyze what are the changes. If there are staged changes, look at only the staged changes.
 2. Write your commit message in the following format:
 
 	```
