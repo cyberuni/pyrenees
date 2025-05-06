@@ -71,3 +71,5 @@ function badExample() {
 }
 ```
 ````
+
+6. Update [master.mdc](mdc:.cursor/rules/master.mdc) to reference the new rule and describe its purpose
