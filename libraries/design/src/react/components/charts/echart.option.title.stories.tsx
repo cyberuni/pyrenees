@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Chart } from './chart.js'
+import { EChart } from './echart.js'
 import { defineChartOption } from './options.js'
 
 const meta: Meta = {
-	title: 'components/charts/Chart/option/title',
+	title: 'components/charts/EChart/option/title',
 	parameters: {
 		layout: 'centered',
 	},
@@ -14,7 +14,7 @@ export default meta
 export const NoTitle: StoryObj = {
 	render() {
 		return (
-			<Chart
+			<EChart
 				id="main"
 				option={defineChartOption({
 					xAxis: {
@@ -38,7 +38,7 @@ export const NoTitle: StoryObj = {
 export const SingleTitle: StoryObj = {
 	render() {
 		return (
-			<Chart
+			<EChart
 				id="main"
 				option={defineChartOption({
 					title: {
