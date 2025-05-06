@@ -1,0 +1,29 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Project Overview
+
+This is a monorepo managed with pnpm workspaces. The main configuration files are:
+
+- [package.json](mdc:package.json) - Root package configuration
+- [pnpm-workspace.yaml](mdc:pnpm-workspace.yaml) - Workspace configuration
+- [turbo.json](mdc:turbo.json) - Turborepo configuration
+
+## Directory Structure
+
+- `apps/` - Contains application projects
+  - `storybook/` - Storybook documentation app
+- `libraries/` - Additional shared libraries
+- `react/` - ReactJS specific libraries
+- `tools/` - Development and build tools
+
+## Development Setup
+
+The project uses several tools for code quality:
+- [.prettierrc.js](mdc:.prettierrc.js) - Prettier configuration
+- [biome.jsonc](mdc:biome.jsonc) - Biome configuration
+- [eslint.config.mjs](mdc:eslint.config.mjs) - ESLint configuration
+
+For more information about contributing, see [CONTRIBUTING.md](mdc:CONTRIBUTING.md).

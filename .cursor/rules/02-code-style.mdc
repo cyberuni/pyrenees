@@ -1,0 +1,25 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Code Style and Conventions
+
+## Code Formatting
+
+The project uses multiple tools to ensure consistent code style:
+
+1. Prettier for basic code formatting - See [.prettierrc.js](mdc:.prettierrc.js)
+2. ESLint for JavaScript/TypeScript linting - See [eslint.config.mjs](mdc:eslint.config.mjs)
+3. Biome for additional code quality checks - See [biome.jsonc](mdc:biome.jsonc)
+4. EditorConfig for editor consistency - See [.editorconfig](mdc:.editorconfig)
+
+## Git Conventions
+
+- Git attributes are defined in [.gitattributes](mdc:.gitattributes)
+- Commit messages are linted using commitlint - See [commitlint.config.js](mdc:commitlint.config.js)
+- Pre-commit hooks are managed by Husky in the `.husky` directory
+
+## TypeScript Configuration
+
+The TypeScript configuration is managed in [tsconfig.json](mdc:tsconfig.json), which serves as the base configuration for all TypeScript projects in the monorepo.

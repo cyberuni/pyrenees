@@ -1,0 +1,28 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Package Management
+
+## Workspace Configuration
+
+This project uses pnpm workspaces for package management. The main configuration files are:
+
+- [pnpm-workspace.yaml](mdc:pnpm-workspace.yaml) - Defines workspace package locations
+- [.npmrc](mdc:.npmrc) - NPM and pnpm configuration
+- [package.json](mdc:package.json) - Root package dependencies and scripts
+
+## Dependency Management
+
+- Dependencies are locked in [pnpm-lock.yaml](mdc:pnpm-lock.yaml)
+- Workspace packages are organized in:
+  - `apps/*` - Application packages
+  - `packages/*` - Shared library packages
+  - `libraries/*` - Additional library packages
+
+## Version Management
+
+The project uses Changesets for version management:
+- Changesets are stored in the `.changeset` directory
+- Version bumps and changelogs are managed through the Changesets workflow

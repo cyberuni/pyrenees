@@ -1,0 +1,73 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# File and Folder Structure
+
+## Root Directory
+
+The root directory contains several important configuration files:
+
+### Build and TypeScript Configuration
+- [tsconfig.json](mdc:/tsconfig.json) - Base TypeScript configuration
+- [vitest.config.ts](mdc:/vitest.config.ts) - Vitest test runner configuration
+- [turbo.json](mdc:/turbo.json) - Turborepo pipeline configuration
+
+### Code Quality
+- [biome.jsonc](mdc:/biome.jsonc) - Biome formatter and linter config
+- [.prettierrc.js](mdc:/.prettierrc.js) - Prettier formatting rules
+- [.editorconfig](mdc:/.editorconfig) - Editor configuration
+- [eslint.config.mjs](mdc:/eslint.config.mjs) - ESLint rules
+
+### Package Management
+- [pnpm-workspace.yaml](mdc:/pnpm-workspace.yaml) - Workspace definitions
+- [package.json](mdc:/package.json) - Root package configuration
+- [.npmrc](mdc:/.npmrc) - NPM configuration
+
+## Main Directories
+
+### Apps Directory (`apps/`)
+Contains standalone applications:
+
+```
+apps/
+└── storybook/           # Storybook documentation app
+    ├── .storybook/     # Storybook configuration
+    ├── stories/        # Story components
+    └── package.json    # Storybook dependencies
+```
+
+### Packages Directory (`packages/`)
+Contains shared libraries:
+
+```
+packages/
+└── node-library/       # Node.js shared library
+    ├── src/           # Source code
+    ├── cjs/          # CommonJS build output
+    ├── esm/          # ES Modules build output
+    ├── tslib/        # TypeScript build output
+    └── package.json  # Library dependencies
+```
+
+### Additional Directories
+- `libraries/` - Additional shared libraries and components
+- `tools/` - Development and build tooling
+- `.changeset/` - Changesets for version management
+- `.github/` - GitHub workflows and configuration
+- `.husky/` - Git hooks for code quality
+- `.vscode/` - VS Code editor settings
+
+## Key Configuration Files
+
+### Node Library Configuration
+The `node-library` package uses multiple TypeScript configurations for different build targets:
+- [packages/node-library/tsconfig.base.json](mdc:/packages/node-library/tsconfig.base.json) - Base configuration
+- [packages/node-library/tsconfig.cjs.json](mdc:/packages/node-library/tsconfig.cjs.json) - CommonJS build
+- [packages/node-library/tsconfig.esm.json](mdc:/packages/node-library/tsconfig.esm.json) - ES Modules build
+- [packages/node-library/tsconfig.tslib.json](mdc:/packages/node-library/tsconfig.tslib.json) - TypeScript library build
+
+### Documentation
+- [README.md](mdc:/README.md) - Project documentation
+- [CONTRIBUTING.md](mdc:/CONTRIBUTING.md) - Contribution guidelines

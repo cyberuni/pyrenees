@@ -1,0 +1,40 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Build Outputs and Artifacts
+
+## Build Directories
+The following directories contain build outputs and should not be committed to version control:
+
+```
+node-library/
+├── cjs/        # CommonJS build output
+├── esm/        # ES Modules build output
+├── tslib/      # TypeScript build output
+└── coverage/   # Test coverage reports
+
+storybook/
+└── storybook-static/  # Built Storybook site
+```
+
+## Build Configuration
+Build outputs are configured through several files:
+
+### Node Library Builds
+- [packages/node-library/.size-limit.json](mdc:/packages/node-library/.size-limit.json) - Bundle size limits
+- [packages/node-library/.depcheckrc.yml](mdc:/packages/node-library/.depcheckrc.yml) - Dependency checking
+- Build-specific TypeScript configs:
+  - [packages/node-library/tsconfig.cjs.json](mdc:/packages/node-library/tsconfig.cjs.json)
+  - [packages/node-library/tsconfig.esm.json](mdc:/packages/node-library/tsconfig.esm.json)
+  - [packages/node-library/tsconfig.tslib.json](mdc:/packages/node-library/tsconfig.tslib.json)
+
+### Build Cache
+- `.turbo/` directories contain Turborepo build caches
+- Build artifacts are tracked in various `.tsbuildinfo` files
+
+## Ignored Files
+Build outputs and artifacts are excluded from version control as specified in:
+- [.gitignore](mdc:/.gitignore) - Root gitignore
+- [packages/node-library/.gitignore](mdc:/packages/node-library/.gitignore) - Node library specific ignores
