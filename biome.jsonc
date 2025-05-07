@@ -5,6 +5,7 @@
 		"ignore": [
 			".locofy",
 			".turbo",
+			".vscode/*.txt",
 			"cjs",
 			"coverage",
 			"dist",
