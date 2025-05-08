@@ -1,0 +1,82 @@
+/**
+ * cjk variant overrides for Tailwind CSS
+ *
+ * They need to be placed together here instead of in individual files.
+ * Because multiple `* { ... }` in the resulting CSS will cause infinite loop/performance issue.
+ */
+
+@layer theme {
+	* {
+		@variant hans {
+			/* #region Body */
+			--pds-body-text-xs: theme(--text-25);
+			--pds-body-text-sm: theme(--text-50);
+			--pds-body-text-md: theme(--text-75);
+			--pds-body-text-lg: theme(--text-100);
+
+			--pds-body-leading: theme(--leading-300);
+
+			--pds-body-emphasized-font-style: normal;
+			--pds-body-strong-emphasized-font-style: normal;
+
+			--pds-body-emphasized-font-weight: theme(--font-weight-extrabold);
+			--pds-body-strong-font-weight: theme(--font-weight-extrabold);
+			--pds-body-strong-emphasized-font-weight: theme(--font-weight-extrabold);
+			/* #endregion Body */
+
+			/* #region Heading */
+			--pds-heading-text-xs: theme(--text-50);
+			--pds-heading-text-sm: theme(--text-75);
+			--pds-heading-text-md: theme(--text-100);
+			--pds-heading-text-lg: theme(--text-200);
+			--pds-heading-text-xl: theme(--text-400);
+			--pds-heading-text-2xl: theme(--text-600);
+			--pds-heading-text-3xl: theme(--text-800);
+			--pds-heading-text-4xl: theme(--text-1000);
+
+			--pds-heading-leading: theme(--leading-200);
+
+			--pds-heading-emphasized-font-style: normal;
+			--pds-heading-strong-emphasized-font-style: normal;
+
+			--pds-heading-font-weight: theme(--font-weight-semibold);
+			--pds-heading-emphasized-font-weight: theme(--font-weight-bold);
+			--pds-heading-strong-font-weight: theme(--font-weight-extrabold);
+			--pds-heading-strong-emphasized-font-weight: theme(--font-weight-extrabold);
+			/* #endregion Heading */
+
+			/* #region Code */
+			--pds-code-text-xs: theme(--text-25);
+			--pds-code-text-sm: theme(--text-50);
+			--pds-code-text-md: theme(--text-75);
+			--pds-code-text-lg: theme(--text-100);
+
+			--pds-code-leading: theme(--leading-300);
+			/* #endregion Code */
+
+			/* #region Detail */
+			--pds-detail-text-sm: theme(--text-25);
+			--pds-detail-text-md: theme(--text-50);
+			--pds-detail-text-lg: theme(--text-75);
+
+			--pds-detail-leading: theme(--leading-200);
+
+			--pds-detail-emphasized-font-style: normal;
+			--pds-detail-strong-emphasized-font-style: normal;
+
+			--pds-detail-light-emphasized-font-style: normal;
+			--pds-detail-light-strong-emphasized-font-style: normal;
+
+			--pds-detail-font-weight: theme(--font-weight-extrabold);
+			--pds-detail-emphasized-font-weight: theme(--font-weight-extrabold);
+			--pds-detail-strong-font-weight: theme(--font-weight-extrabold);
+			--pds-detail-strong-emphasized-font-weight: theme(--font-weight-extrabold);
+
+			--pds-detail-light-font-weight: theme(--font-weight-light);
+			--pds-detail-light-emphasized-font-weight: theme(--font-weight-normal);
+			--pds-detail-light-strong-font-weight: theme(--font-weight-extrabold);
+			--pds-detail-light-strong-emphasized-font-weight: theme(--font-weight-extrabold);
+			/* #endregion Detail */
+		}
+	}
+}
