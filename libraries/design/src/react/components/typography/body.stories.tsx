@@ -3,8 +3,7 @@ import { expect } from '@storybook/test'
 import { TextContext } from 'react-aria-components'
 import { tw } from '../../../index.js'
 import { StorySwatch } from '../../../storybook/index.js'
-import { Body } from './body.js'
-import { bodyTheme } from './body.theme.js'
+import { Body } from '../../index.js'
 
 export default {
 	title: 'components/typography/Body',
@@ -19,10 +18,10 @@ export const Size: Story = {
 	render() {
 		return (
 			<StorySwatch>
-				<Body className={bodyTheme.className.fontSize.xs}>Alice in Wonderland (size: xs)</Body>
-				<Body className={bodyTheme.className.fontSize.sm}>Alice in Wonderland (size: sm)</Body>
-				<Body className={bodyTheme.className.fontSize.md}>Alice in Wonderland (size: md - default)</Body>
-				<Body className={bodyTheme.className.fontSize.lg}>Alice in Wonderland (size: lg)</Body>
+				<Body className="pds:body-text-xs">Alice in Wonderland (size: xs)</Body>
+				<Body className="pds:body-text-sm">Alice in Wonderland (size: sm)</Body>
+				<Body className="pds:body-text-md">Alice in Wonderland (size: md - default)</Body>
+				<Body className="pds:body-text-lg">Alice in Wonderland (size: lg)</Body>
 			</StorySwatch>
 		)
 	},
@@ -33,22 +32,78 @@ export const TextColor: Story = {
 	render() {
 		return (
 			<StorySwatch>
-				<Body className={bodyTheme.className.color.primary}>Alice in Wonderland (color: primary)</Body>
-				<Body className={bodyTheme.className.color.secondary}>Alice in Wonderland (color: secondary)</Body>
-				<Body className={bodyTheme.className.color.hint}>Alice in Wonderland (color: hint)</Body>
-				<Body className={bodyTheme.className.color.disabled}>Alice in Wonderland (color: disabled)</Body>
-				<Body className={bodyTheme.className.color.success}>Alice in Wonderland (color: success)</Body>
-				<Body className={bodyTheme.className.color.error}>Alice in Wonderland (color: error)</Body>
+				<Body className="pds:text-primary">Alice in Wonderland (color: primary)</Body>
+				<Body className="pds:text-secondary">Alice in Wonderland (color: secondary)</Body>
+				<Body className="pds:text-hint">Alice in Wonderland (color: hint)</Body>
+				<Body className="pds:text-disabled">Alice in Wonderland (color: disabled)</Body>
+				<Body className="pds:text-success">Alice in Wonderland (color: success)</Body>
+				<Body className="pds:text-error">Alice in Wonderland (color: error)</Body>
 			</StorySwatch>
 		)
 	},
 }
-export const Italic: Story = {
+
+export const Emphasized: Story = {
 	render: () => (
 		<StorySwatch>
-			<Body className={bodyTheme.className.italic}>Alice in Wonderland (italic)</Body>
+			<Body data-testid="as-default" emphasized>
+				Alice in Wonderland (emphasized)
+			</Body>
+			<div data-font="hans">
+				<Body data-testid="as-hans" emphasized>
+					良い一日をお過ごしください。
+				</Body>
+			</div>
 		</StorySwatch>
 	),
+	async play({ canvas }) {
+		const defaultBody = canvas.getByTestId('as-default')
+		const hansBody = canvas.getByTestId('as-hans')
+		expect(defaultBody).toHaveClass('pds:body-emphasized')
+		expect(hansBody).toHaveClass('pds:body-emphasized')
+	},
+}
+
+export const Strong: Story = {
+	render: () => (
+		<StorySwatch>
+			<Body data-testid="as-default" strong>
+				Alice in Wonderland (strong)
+			</Body>
+			<div data-font="hans">
+				<Body data-testid="as-hans" strong>
+					良い一日をお過ごしください。
+				</Body>
+			</div>
+		</StorySwatch>
+	),
+	async play({ canvas }) {
+		const defaultBody = canvas.getByTestId('as-default')
+		const hansBody = canvas.getByTestId('as-hans')
+		expect(defaultBody).toHaveClass('pds:body-strong')
+		expect(hansBody).toHaveClass('pds:body-strong')
+	},
+}
+
+export const StrongEmphasized: Story = {
+	render: () => (
+		<StorySwatch>
+			<Body data-testid="as-default" strong emphasized>
+				Alice in Wonderland (strong emphasized)
+			</Body>
+			<div data-font="hans">
+				<Body data-testid="as-hans" strong emphasized>
+					良い一日をお過ごしください。
+				</Body>
+			</div>
+		</StorySwatch>
+	),
+	async play({ canvas }) {
+		const defaultBody = canvas.getByTestId('as-default')
+		const hansBody = canvas.getByTestId('as-hans')
+		expect(defaultBody).toHaveClass('pds:body-strong-emphasized')
+		expect(hansBody).toHaveClass('pds:body-strong-emphasized')
+	},
 }
 
 export const FontWeight: Story = {
@@ -56,9 +111,9 @@ export const FontWeight: Story = {
 	render() {
 		return (
 			<StorySwatch>
-				<Body className={bodyTheme.className.fontWeight.normal}>Alice in Wonderland (weight: normal - default)</Body>
-				<Body className={bodyTheme.className.fontWeight.semibold}>Alice in Wonderland (weight: semibold)</Body>
-				<Body className={bodyTheme.className.fontWeight.bold}>Alice in Wonderland (weight: bold)</Body>
+				<Body className="pds:font-normal">Alice in Wonderland (weight: normal - default)</Body>
+				<Body className="pds:font-semibold">Alice in Wonderland (weight: semibold)</Body>
+				<Body className="pds:font-bold">Alice in Wonderland (weight: bold)</Body>
 			</StorySwatch>
 		)
 	},

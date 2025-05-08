@@ -3,6 +3,10 @@
 	line-height: --theme(--body-leading);
 }
 
+@utility body-leading {
+	line-height: --theme(--body-leading);
+}
+
 @utility body-normal {
 	font-style: --theme(--body-font-style);
 	font-weight: --theme(--body-font-weight);

@@ -4,4 +4,5 @@
 @import 'tailwindcss/utilities.css' layer(utilities);
 @import '../utilities.css';
 @import '../variants/variants.dark.css';
+@import '../variants/variants.hans.css';
 @import '../variants/variants.css';
