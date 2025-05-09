@@ -1,14 +1,18 @@
 import { forwardRef } from 'react'
-import { Button as AriaButton, ButtonContext, useContextProps } from '../../react-aria-components/_index.js'
+import {
+	Button as AriaButton,
+	ButtonContext as AriaButtonContext,
+	useContextProps,
+} from '../../react-aria-components/_index.js'
 import { resolveChildren } from '../../utils/children.js'
 import { resolveStyle } from '../../utils/style.js'
-import { PanButtonContext } from './button.context.js'
+import { ButtonContext } from './button.context.js'
 import { buttonTheme } from './button.theme.js'
 import type { ButtonProps } from './button.types.js'
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
+	;[props, ref] = useContextProps(props, ref, AriaButtonContext)
 	;[props, ref] = useContextProps(props, ref, ButtonContext)
-	;[props, ref] = useContextProps(props, ref, PanButtonContext)
 
 	const { size = 'md', appearance = 'secondary', className, children, isDisabled = false, style, ...rest } = props
 	return (
