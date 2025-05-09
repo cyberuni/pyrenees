@@ -1,6 +1,8 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "tsconfig/tsconfig.react.json",
   "compilerOptions": {
-    "outDir": "esm"
-  }
+    "outDir": "esm",
+    "rootDir": "src"
+  },
+  "include": ["src", "types"]
 }

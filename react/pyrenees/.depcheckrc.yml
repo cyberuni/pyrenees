@@ -1,0 +1,12 @@
+ignores:
+  - '@repobuddy/storybook'     # For Storybook utilities
+  - '@size-limit/*'            # depcheck unable to recognize size-limit
+  - '@storybook/*'             # Storybook packages
+  - '@vitest/coverage-v8'
+  - rimraf                     # https://github.com/depcheck/depcheck/issues/776
+  - size-limit                 # depcheck unable to recognize size-limit
+  - design                     # For Tailwind CSS
+  - playwright                 # For browser testing
+  - storybook-dark-mode        # For Storybook
+  - vitest-browser-react       # For browser testing
+  - tailwindcss                # For Tailwind CSS

@@ -2,6 +2,7 @@
 	"name": "design",
 	"version": "0.0.0",
 	"description": "",
+	"private": true,
 	"type": "module",
 	"exports": {
 		"./fonts/font.css": "./fonts/lato.css",
@@ -74,8 +75,8 @@
 		"assertron": "^11.5.2",
 		"in-range": "^3.0.0",
 		"playwright": "^1.52.0",
-		"react": "^18",
-		"react-dom": "^18",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
 		"storybook": "^8.6.12",
 		"storybook-addon-vis": "^0.19.4",
 		"storybook-dark-mode": "^4.0.2",
@@ -83,7 +84,7 @@
 		"time-span": "^5.1.0",
 		"tsconfig": "workspace:^",
 		"typescript": "^5.8.3",
-		"vite": "^6.3.3",
+		"vite": "^6.3.5",
 		"vitest": "^3.1.2",
 		"vitest-browser-react": "^0.1.1"
 	}

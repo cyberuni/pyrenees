@@ -16,7 +16,7 @@ function getDimensions(target: HTMLElement | Window | null): Dimensions {
 	}
 	return {
 		width: target.innerWidth,
-		height: target.innerHeight
+		height: target.innerHeight,
 	}
 }
 
@@ -27,12 +27,12 @@ export function useDimensions(element?: {
 	ref: React.MutableRefObject<HTMLElement | null> | null
 }) {
 	const [dimensions, setDimensions] = useState<Dimensions>(
-		getDimensions(element === undefined ? window : element.ref?.current ?? null)
+		getDimensions(element === undefined ? window : (element.ref?.current ?? null)),
 	)
 
 	useEffect(() => {
 		let isMounted = true
-		const target = element === undefined ? window : element.ref?.current ?? null
+		const target = element === undefined ? window : (element.ref?.current ?? null)
 		function handleResize() {
 			if (isMounted) setDimensions(getDimensions(target))
 		}
