@@ -1,0 +1,3 @@
+{
+  "extends": ["@repobuddy/typescript/tsconfig/modules/buddy-commonjs.json"]
+}
