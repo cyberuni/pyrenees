@@ -26,8 +26,9 @@
 		"design": "workspace:*"
 	},
 	"devDependencies": {
+		"@project/tsconfig": "workspace:^",
 		"@repobuddy/storybook": "^0.5.0",
-		"@repobuddy/vitest": "^1.2.1",
+		"@repobuddy/vitest": "^1.2.2",
 		"@size-limit/preset-small-lib": "~11.2.0",
 		"@storybook/addon-essentials": "^8.6.12",
 		"@storybook/addon-storysource": "^8.6.12",
@@ -53,7 +54,6 @@
 		"storybook-addon-vis": "^0.19.4",
 		"storybook-dark-mode": "^4.0.2",
 		"tailwindcss": "^4.1.4",
-		"tsconfig": "workspace:^",
 		"typescript": "^5.8.3",
 		"vite": "^6.3.5",
 		"vitest": "^3.1.2",
