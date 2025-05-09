@@ -1,7 +1,7 @@
 export function getTransitionConfig(
 	size: { width?: string | number; height?: string | number },
 	animation: { tension: number; friction: number },
-	duration = 300
+	duration = 300,
 ) {
 	if ('width' in size) {
 		const { width } = size
@@ -10,7 +10,7 @@ export function getTransitionConfig(
 			enter: { width },
 			update: { width },
 			leave: { width: 0 },
-			config: { ...animation, duration: duration, clamp: true }
+			config: { ...animation, duration: duration, clamp: true },
 		}
 	}
 	if ('height' in size) {
@@ -20,7 +20,7 @@ export function getTransitionConfig(
 			enter: { height },
 			update: { height },
 			leave: { height: 0 },
-			config: { ...animation, duration: duration, clamp: true }
+			config: { ...animation, duration: duration, clamp: true },
 		}
 	}
 	return {}

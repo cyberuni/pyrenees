@@ -23,6 +23,7 @@
 		"prepare": "husky && playwright install chromium",
 		"r:d": "turbo --filter ./libraries/design",
 		"release": "changeset publish",
+		"rp": "pnpm --filter ./react/pyrenees",
 		"size": "turbo run size",
 		"t:cov": "vitest run --coverage",
 		"test": "turbo run test",
