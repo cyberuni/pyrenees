@@ -32,7 +32,7 @@ export const Playground: Story = {
 				<SpecCodeCell>w-4 h-4</SpecCodeCell>
 			</SpecRow>
 			<SpecRow>
-				<SpecCell>Medium</SpecCell>
+				<SpecCell>Medium (default)</SpecCell>
 				<SpecCell>
 					<IconSurface {...args}>
 						<CarIcon className="pds:fill-strata" />
