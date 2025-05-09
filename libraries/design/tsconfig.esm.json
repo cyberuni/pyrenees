@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/tsconfig.react.json",
+  "extends": "@project/tsconfig/tsconfig.react.json",
   "compilerOptions": {
     "outDir": "esm",
     "rootDir": "src"

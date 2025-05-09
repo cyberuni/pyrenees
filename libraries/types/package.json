@@ -24,7 +24,7 @@
 		"csstype": "^3.1.3"
 	},
 	"devDependencies": {
-		"tsconfig": "workspace:^",
+		"@project/tsconfig": "workspace:^",
 		"depcheck": "^1.4.7",
 		"npm-run-all2": "^6.2.3",
 		"typescript": "^5.8.3"
