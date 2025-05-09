@@ -53,6 +53,7 @@
 		"type-plus": "8.0.0-beta.7"
 	},
 	"devDependencies": {
+		"@repobuddy/storybook": "^0.5.0",
 		"@storybook/addon-essentials": "^8.6.12",
 		"@storybook/addon-storysource": "^8.6.12",
 		"@storybook/addon-themes": "^8.6.12",
@@ -73,8 +74,8 @@
 		"assertron": "^11.5.2",
 		"in-range": "^3.0.0",
 		"playwright": "^1.52.0",
-		"react": "^19.1.0",
-		"react-dom": "^19.1.0",
+		"react": "^18",
+		"react-dom": "^18",
 		"storybook": "^8.6.12",
 		"storybook-addon-vis": "^0.19.4",
 		"storybook-dark-mode": "^4.0.2",
