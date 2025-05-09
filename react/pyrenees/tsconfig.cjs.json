@@ -1,0 +1,20 @@
+{
+  "extends": ["./tsconfig.base.json", "tsconfig/tsconfig.parts.cjs.json"],
+  "compilerOptions": {
+    "outDir": "cjs"
+  },
+  // excluding test files as they might contain platform specific code,
+  // such as `import.meta`
+  "exclude": [
+    "**/*.accept.*",
+    "**/*.integrate.*",
+    "**/*.learning.*",
+    "**/*.pref.*",
+    "**/*.spec.*",
+    "**/*.stress.*",
+    "**/*.study.*",
+    "**/*.system.*",
+    "**/*.test.*",
+    "**/*.unit.*"
+  ]
+}
