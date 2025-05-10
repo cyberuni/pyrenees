@@ -1,11 +1,30 @@
 ---
-description: working on ReactJS related code
-globs:
+description:
+globs: *.tsx
 alwaysApply: false
 ---
 # React Development Guidelines
 
 This document outlines the best practices and patterns for React development in our project.
+
+## Basig Styling
+
+1. Use simple string values for className props:
+   ```typescript
+   // ✅ Good example
+   export const Default: StoryObj = {
+     render: () => (
+       <YourComponent className="flex gap-4" />
+     )
+   }
+
+   // ❌ Bad example - avoid curly braces for simple strings
+   export const Default: StoryObj = {
+     render: () => (
+       <YourComponent className={"flex gap-4"} />
+     )
+   }
+   ```
 
 ## Component Structure
 
