@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { ColorSwatch } from 'react-aria-components'
 
 export function ColorPalette({ children }: { children: ReactNode }) {
 	return (
@@ -26,7 +27,13 @@ export function ColorItem({
 			<div className="pds:flex-2/3 pds:w-full">
 				{typeof colors === 'string' ? (
 					<div className="pds:flex pds:flex-col pds:gap-2">
-						<div className="pds:min-w-8 pds:h-8" style={{ backgroundColor: colors }} />
+						<ColorSwatch
+							className="pds:min-w-8 pds:h-8"
+							style={({ defaultStyle }) => ({
+								...defaultStyle,
+								backgroundColor: colors,
+							})}
+						/>
 						<div className="pds:flex pds:flex-col pds:items-center">
 							<span>{colors}</span>
 						</div>
