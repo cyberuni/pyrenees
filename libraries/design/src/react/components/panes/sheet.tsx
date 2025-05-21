@@ -1,7 +1,8 @@
 import { cva } from 'class-variance-authority'
 import { motion } from 'motion/react'
+import type { PropsWithChildren } from 'react'
 
-export interface SheetProps {
+export interface SheetProps extends PropsWithChildren {
 	size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | undefined
 	align?: 'right' | undefined
 	isOpen?: boolean | undefined
@@ -11,8 +12,9 @@ export interface SheetProps {
 const variants = cva(
 	[
 		'pds:box-border pds:font-lato',
-		'pds:backdrop-blur pds:bg-steel-gray-50/92 pds:shadow-sheet dark:pds:shadow-dark-sheet',
-		'pds:z-10 dark:pds:bg-steel-gray-1100/92',
+		'pds:bg-steel-gray-50/92 pds:dark:bg-steel-gray-1100/92',
+		'pds:backdrop-blur  pds:shadow-sheet pds:dark:shadow-dark-sheet',
+		'pds:z-10 pds:dark:bg-steel-gray-1100/92',
 		'pds:flex pds:flex-col pds:overflow-hidden',
 		'pds:fixed pds:top-0 pds:bottom-0 pds:right-0',
 		'pds:h-full',
@@ -33,7 +35,7 @@ const variants = cva(
 	},
 )
 
-export function Sheet({ size, isOpen, onClose }: SheetProps) {
+export function Sheet({ size, isOpen, onClose, children }: SheetProps) {
 	return (
 		<>
 			{isOpen && (
@@ -63,7 +65,7 @@ export function Sheet({ size, isOpen, onClose }: SheetProps) {
 					stiffness: 200,
 				}}
 			>
-				<div>Sheet</div>
+				{children}
 			</motion.div>
 		</>
 	)
