@@ -1,4 +1,4 @@
-import type { ClassNameProps } from '@just-web/types'
+import type { ClassNameProps } from '@just-web/css'
 import type { ReactNode } from 'react'
 import { twMerge } from 'tailwind-merge'
 

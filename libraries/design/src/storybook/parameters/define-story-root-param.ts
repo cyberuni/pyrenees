@@ -1,4 +1,5 @@
-import type { DataAttributeProps, StyleProps } from '@just-web/types'
+import type { StyleProps } from '@just-web/css'
+import type { DataAttributeProps } from '@just-web/types'
 
 export interface StoryRootParam extends StyleProps {
 	themes?:
