@@ -1,0 +1,34 @@
+import{j as p}from"./jsx-runtime-Cf8x2fCZ.js";import{E as d,d as c}from"./options-4XwLZ-iy.js";import"./index-yBjzXJbu.js";import"./index-BlmOqGMO.js";import"./tw-merge-Dzlj8q8h.js";import"./style-DwrwojIq.js";const E={title:"components/charts/EChart/option/title",parameters:{layout:"centered"}},e={render(){return p.jsx(d,{id:"main",option:c({xAxis:{data:["shirt","cardigan","chiffon","pants","heels","socks"]},yAxis:{},series:[{name:"sales",type:"bar",color:"#333",data:[5,20,36,10,10,20]}]})})}},t={render(){return p.jsx(d,{id:"main",option:c({title:{text:"ECharts Getting Started Example"},xAxis:{data:["shirt","cardigan","chiffon","pants","heels","socks"]},yAxis:{},series:[{name:"sales",type:"bar",color:"#333",data:[5,20,36,10,10,20]}]})})}};var r,a,s;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  render() {
+    return <EChart id="main" option={defineChartOption({
+      xAxis: {
+        data: ['shirt', 'cardigan', 'chiffon', 'pants', 'heels', 'socks']
+      },
+      yAxis: {},
+      series: [{
+        name: 'sales',
+        type: 'bar',
+        color: '#333',
+        data: [5, 20, 36, 10, 10, 20]
+      }]
+    })} />;
+  }
+}`,...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};var i,o,n;t.parameters={...t.parameters,docs:{...(i=t.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  render() {
+    return <EChart id="main" option={defineChartOption({
+      title: {
+        text: 'ECharts Getting Started Example'
+      },
+      xAxis: {
+        data: ['shirt', 'cardigan', 'chiffon', 'pants', 'heels', 'socks']
+      },
+      yAxis: {},
+      series: [{
+        name: 'sales',
+        type: 'bar',
+        color: '#333',
+        data: [5, 20, 36, 10, 10, 20]
+      }]
+    })} />;
+  }
+}`,...(n=(o=t.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const g=["NoTitle","SingleTitle"];export{e as NoTitle,t as SingleTitle,g as __namedExportsOrder,E as default};
