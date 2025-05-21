@@ -27,7 +27,7 @@
 	},
 	"devDependencies": {
 		"@project/tsconfig": "workspace:^",
-		"@repobuddy/storybook": "^0.5.0",
+		"@repobuddy/storybook": "^0.9.4",
 		"@repobuddy/vitest": "^1.2.2",
 		"@size-limit/preset-small-lib": "~11.2.0",
 		"@storybook/addon-essentials": "^8.6.12",
