@@ -18,7 +18,7 @@ How to add new cursor rules to the project
 
 2. Follow the naming convention:
 
-  - Use kebab-case for filenames
+  - Use snake_case for filenames
   - Always use .mdc extension
   - Make names descriptive of the rule's purpose
 

@@ -28,7 +28,7 @@ This rule describes the standard project structure and file organization convent
 1. **Place new apps in `/apps/`**
 2. **Place shared library code in `/libraries/`**
 4. **Place project-specific tools in `/tools/`**
-5. **Use kebab-case for directory and file names**
+5. **Use snake_case for directory and file names**
 6. **File names can contain additional sub-context, such as tests, context, and TypeScript types. They are added to the file name seperating by `.`. For example: `data-grid.spec.tsx`, `data-grid.ctx.ts`, `data-grid.theme.ts`, `data-grid.types.ts`.**
 7. **Place test and Storybook file next to the source file, not in different folders**
 8. **Keep configuration files at the root unless project-specific**
