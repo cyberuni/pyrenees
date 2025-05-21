@@ -1,4 +1,4 @@
-import type { CSSProperties } from '@just-web/types'
+import type { CSSProperties } from '@just-web/css'
 import type { ReactNode } from 'react'
 import { twMerge } from '../../internal/utils/tw-merge.js'
 

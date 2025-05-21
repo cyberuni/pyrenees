@@ -1,4 +1,4 @@
-import type { CSSProperties } from '@just-web/types'
+import type { CSSProperties } from '@just-web/css'
 import { cva } from 'class-variance-authority'
 import type { PropsWithChildren } from 'react'
 import { twMerge } from '../../../internal/utils/tw-merge.js'
