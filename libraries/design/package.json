@@ -86,7 +86,7 @@
 		"tailwindcss": "^4.1.4",
 		"time-span": "^5.1.0",
 		"typescript": "^5.8.3",
-		"vite": "^6.3.5",
+		"vite": "^6.3.6",
 		"vitest": "^3.1.2",
 		"vitest-browser-react": "^0.1.1"
 	}
