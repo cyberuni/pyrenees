@@ -1,6 +1,6 @@
 import { defineDocsParam } from '@repobuddy/storybook'
 import type { Meta, StoryObj } from '@storybook/react'
-import { defineLayoutParam } from '../parameters/define-layout-param.js'
+import { defineLayoutParam } from '@repobuddy/storybook'
 import { ColorItem, ColorPalette } from './color-palette.js'
 
 export default {
