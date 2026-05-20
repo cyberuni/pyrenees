@@ -7,8 +7,6 @@ on:
 jobs:
   code:
     uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@main
-    with:
-      node-version: '[18, 20]'
 
   release:
     uses: cyberuni/.github/.github/workflows/pnpm-release-changeset.yml@main
