@@ -6,17 +6,17 @@ on:
 
 jobs:
   code:
-    uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@main
+    uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@v1
 
   release:
-    uses: cyberuni/.github/.github/workflows/pnpm-release-changeset.yml@main
+    uses: cyberuni/.github/.github/workflows/pnpm-release-changeset.yml@v1
     needs: code
     secrets: inherit
 
   docgen:
     permissions:
       contents: write
-    uses: cyberuni/.github/.github/workflows/pnpm-docs.yml@main
+    uses: cyberuni/.github/.github/workflows/pnpm-docs.yml@v1
     needs: release
     with:
       publish-dir: ./libraries/design/storybook-static
