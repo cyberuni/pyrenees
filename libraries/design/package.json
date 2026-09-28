@@ -38,8 +38,8 @@
 		"w": "vitest"
 	},
 	"dependencies": {
-		"@just-web/css": "^0.3.0",
-		"@just-web/types": "^0.1.1",
+		"@just-web/css": "^0.8.7",
+		"@just-web/types": "^0.2.2",
 		"@react-aria/focus": "^3.20.2",
 		"@react-spring/web": "^9.7.5",
 		"@react-types/shared": "^3.29.0",
@@ -52,7 +52,7 @@
 		"react-aria-components": "^1.8.0",
 		"react-intl": "^7.1.11",
 		"tailwind-merge": "^3.2.0",
-		"type-plus": "8.0.0-beta.10"
+		"type-plus": "8.0.0-beta.12"
 	},
 	"devDependencies": {
 		"@project/tsconfig": "workspace:^",
