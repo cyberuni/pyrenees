@@ -174,8 +174,8 @@ importers:
         specifier: ^3.2.0
         version: 3.2.0
       type-plus:
-        specifier: 8.0.0
-        version: 8.0.0(typescript@5.8.3)
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.8.3)
     devDependencies:
       '@project/tsconfig':
         specifier: workspace:^
@@ -7816,6 +7816,15 @@ packages:
   type-plus@8.0.0-beta.7:
     resolution: {integrity: sha512-LTV9UqBJ20I48Ba2L8N25EOowtrs40MLzsqQFfvAXnPAN9z0ny4CjduFfNIfW7euZ6wr6ImShEtrhR1virHiNw==}
 
+  type-plus@8.0.1:
+    resolution: {integrity: sha512-x1OtyTGuqmmnNu5+iL93KVsHLl6PMeRWUDN8yz+X4f86TuEcXSzX7EAdBK+3CFSp2jyVnQuzvof1Z/3Noc3Dig==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    peerDependencies:
+      typescript: '>= 5.4.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   typescript-eslint@8.32.0:
     resolution: {integrity: sha512-UMq2kxdXCzinFFPsXc9o2ozIpYCCOiEC46MG3yEh5Vipq6BO27otTtEBZA1fQ66DulEUgE97ucQ/3YY66CPg0A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -13845,13 +13854,13 @@ snapshots:
   find-installed-packages@3.0.3:
     dependencies:
       temp: 0.9.4
-      unpartial: 1.0.7
+      unpartial: 1.0.8
 
   find-installed-packages@4.0.1:
     dependencies:
       package-manager-detector: 1.8.0
       temp: 0.9.4
-      unpartial: 1.0.7
+      unpartial: 1.0.8
 
   find-up@4.1.0:
     dependencies:
@@ -16462,7 +16471,7 @@ snapshots:
       color-map: 2.0.6
       standard-log: 12.1.2
       supports-color: 8.1.1
-      unpartial: 1.0.7
+      unpartial: 1.0.8
 
   standard-log-color@13.3.2(standard-log@13.3.2):
     dependencies:
@@ -16727,12 +16736,12 @@ snapshots:
     dependencies:
       acorn: 8.14.1
       is-buffer: 2.0.5
-      unpartial: 1.0.7
+      unpartial: 1.0.8
 
   tersify@4.0.6:
     dependencies:
       acorn: 8.18.0
-      unpartial: 1.0.7
+      unpartial: 1.0.8
 
   tersify@4.0.8:
     dependencies:
@@ -16895,12 +16904,12 @@ snapshots:
   type-plus@5.6.0:
     dependencies:
       tersify: 3.12.1
-      unpartial: 1.0.7
+      unpartial: 1.0.8
 
   type-plus@7.6.2:
     dependencies:
       tersify: 3.12.1
-      unpartial: 1.0.7
+      unpartial: 1.0.8
 
   type-plus@8.0.0(typescript@5.8.3):
     dependencies:
@@ -16912,12 +16921,18 @@ snapshots:
     dependencies:
       tersify: 4.0.6
       typescript: 5.8.3
-      unpartial: 1.0.7
+      unpartial: 1.0.8
 
   type-plus@8.0.0-beta.7:
     dependencies:
       tersify: 3.12.1
       unpartial: 1.0.5
+
+  type-plus@8.0.1(typescript@5.8.3):
+    dependencies:
+      unpartial: 1.0.8
+    optionalDependencies:
+      typescript: 5.8.3
 
   typescript-eslint@8.32.0(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3):
     dependencies:
