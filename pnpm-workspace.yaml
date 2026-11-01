@@ -70,3 +70,5 @@ minimumReleaseAgeExclude:
   - '@mocktomata/*'
   - '@repobuddy/*'
   - '@unional/*'
+  # Renovate security update: vite@6.4.4
+  - vite@6.4.4
