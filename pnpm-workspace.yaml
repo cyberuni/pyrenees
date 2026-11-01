@@ -70,3 +70,5 @@ minimumReleaseAgeExclude:
   - '@mocktomata/*'
   - '@repobuddy/*'
   - '@unional/*'
+  # Renovate security update: storybook@8.6.19
+  - storybook@8.6.19
