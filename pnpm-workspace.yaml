@@ -70,3 +70,5 @@ minimumReleaseAgeExclude:
   - '@mocktomata/*'
   - '@repobuddy/*'
   - '@unional/*'
+  # Renovate security update: @vitest/browser@3.2.7
+  - "@vitest/browser@3.2.7"
