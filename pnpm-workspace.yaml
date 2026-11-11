@@ -72,3 +72,5 @@ minimumReleaseAgeExclude:
   - '@unional/*'
   # Renovate security update: turbo@2.9.14
   - turbo@2.9.14
+  # Renovate security update: @vitest/browser@3.2.7
+  - "@vitest/browser@3.2.7"
