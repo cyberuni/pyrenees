@@ -72,3 +72,5 @@ minimumReleaseAgeExclude:
   - '@unional/*'
   # Renovate security update: turbo@2.9.14
   - turbo@2.9.14
+  # Renovate security update: echarts@6.1.0
+  - echarts@6.1.0
