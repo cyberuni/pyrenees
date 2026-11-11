@@ -72,3 +72,5 @@ minimumReleaseAgeExclude:
   - '@unional/*'
   # Renovate security update: turbo@2.9.14
   - turbo@2.9.14
+  # Renovate security update: playwright@1.55.1
+  - playwright@1.55.1
