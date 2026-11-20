@@ -74,7 +74,7 @@ minimumReleaseAgeExclude:
   - turbo@2.9.14
   # Renovate security update: echarts@6.1.0
   - echarts@6.1.0
-  # Renovate security update: vite@6.4.4
-  - vite@6.4.4
+  # Renovate security update: vite@6.4.4 || 6.4.5
+  - vite@6.4.4 || 6.4.5
   # Renovate security update: storybook@8.6.19
   - storybook@8.6.19
